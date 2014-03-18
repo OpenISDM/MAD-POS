@@ -1,0 +1,9 @@
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\bin\Debug\MAD-POS.exe
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\bin\Debug\MAD-POS.pdb
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\obj\Debug\MAD-POS.csprojResolveAssemblyReference.cache
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\obj\Debug\MAD_POS.MainF.resources
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\obj\Debug\MAD_POS.Properties.Resources.resources
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\obj\Debug\MAD-POS.csproj.GenerateResource.Cache
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\obj\Debug\MAD-POS.exe
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\obj\Debug\MAD-POS.pdb
+E:\Editor\Project\Visual Studio\MAD-POS\MAD-POS\bin\Debug\MAD-POS.exe.config
