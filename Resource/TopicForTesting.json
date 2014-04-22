@@ -1,0 +1,21 @@
+[{
+    "Name": "玉成國小",
+    "disaster_type": "颱洪",
+    "region": "南港區",
+    "addr": "南港區向陽路31號",
+    "fac_type": "學校",
+    "number_asylum": "30",
+    "telephone": "27836049-150",
+    "latitude": "25.0535838",
+    "longitude": "121.5947448"
+}, {
+    "Name": "南港高中",
+    "disaster_type": "颱洪",
+    "region": "南港區",
+    "addr": "南港區向陽路21號",
+    "fac_type": "優先安置學校",
+    "number_asylum": "435",
+    "telephone": "2783-7863轉241",
+    "latitude": "25.0524116",
+    "longitude": "121.5950265"
+}]
