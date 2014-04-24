@@ -8,14 +8,14 @@ var querystring = require('querystring');
 var postData = querystring.stringify({
   'mode': 'subscribe',
   'topic': 'http://140.109.22.197/static/Topic/110091/110091.json',
-  'callback': 'http://140.109.22.181/callback'
+  'callbackURL': 'http://140.109.22.181/callbackURL'
 });
 
 // An object of options to indicate where to post to
 var postOptions = {
-  hostname: '140.109.21.186',
+  hostname: '140.109.22.197',
   port: 80,
-  path: '/hub/php/',
+  path: '/',
   method: 'POST',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded',
@@ -28,7 +28,7 @@ var req = http.request(postOptions, function(res) {
 
   console.log('STATUS: ' + res.statusCode);
   console.log('HEADERS: ' + JSON.stringify(res.headers));
-  
+
   res.setEncoding('utf8');
   res.on('data', function onData(chunk) {
     console.log('DATA: ' + chunk);
