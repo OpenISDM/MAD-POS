@@ -19,20 +19,20 @@ function start(route, handle) {
       });
       request.addListener("end", function end() {
 
-          var objectPostData = querystring.parse(postData);
-          for (var i in objectPostData) {
-            console.log('After parse: ' + objectPostData[i]);
-            }
-            route(handle, pathname, response, postData);
-          });
+        var objectPostData = querystring.parse(postData);
+        for (var i in objectPostData) {
+          console.log('After parse: ' + objectPostData[i]);
+        }
+        route(handle, pathname, response, postData);
+      });
 
-      } else {
-        route(handle, pathname, response);
-      }
+    } else {
+      route(handle, pathname, response);
     }
-
-    http.createServer(onRequest).listen(8888);
-    console.log('Server has started and running on port ' + 8888);
   }
 
-  exports.start = start;
+  http.createServer(onRequest).listen(8888);
+  console.log('Server has started and running on port ' + 8888);
+}
+
+exports.start = start;
