@@ -20,10 +20,13 @@ function start(route, handle) {
       request.addListener("end", function end() {
 
         var objectPostData = querystring.parse(postData);
+        var topicContent = objectPostData['content'];
+        console.log('topicContent=====: ' + topicContent);
         for (var i in objectPostData) {
+
           console.log('After parse: ' + objectPostData[i]);
         }
-        route(handle, pathname, response, postData);
+        route(handle, pathname, response, postData, topicContent);
       });
 
     } else {
