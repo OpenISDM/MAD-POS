@@ -6,8 +6,9 @@ var Registration = require("./Registration");
 
 var handle = {}
 handle["/"] = requestHandlers.root;
-handle["/callbackURL"] = requestHandlers.callbackURL;
-habdle["/download"] = requestHandlers.download;
+handle["/callback"] = requestHandlers.callback;
+handle["/topic"] = requestHandlers.topic;
+handle["/image"] = requestHandlers.image;
 
 server.start(router.route, handle);
 Registration.registratoin();

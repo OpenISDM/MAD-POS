@@ -1,3 +1,6 @@
+var fs = require('fs');
+var outputFilepath = './topicContent.json';
+
 function root(response, postData) {
   console.log("Request handler 'root' was called.");
   response.writeHead(200, {
@@ -7,8 +10,15 @@ function root(response, postData) {
   response.end();
 }
 
-function callbackURL(response, postData) {
+function callback(response, postData) {
   console.log("Request handler 'callbackURL' was called.");
+  fs.writeFile(outputFilepath, postData, function(err) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("JSON saved to " + outputFilepath);
+    }
+  });
   response.writeHead(200, {
     "Content-Type": "text/plain"
   });
@@ -16,16 +26,46 @@ function callbackURL(response, postData) {
   response.end();
 }
 
-function download(response, postData) {
-  console.log("Request handler 'callbackURL' was called.");
-  response.writeHead(200, {
-    "Content-Type": "text/plain"
+function topic(response, postData) {
+  console.log("Request handler 'download' was called.");
+  fs.readFile("./topicContent.json", "binary", function(error, file) {
+    if (error) {
+      response.writeHead(500, {
+        "Content-Type": "text/plain"
+      });
+      response.write(error + "\n");
+      response.end();
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "text/json"
+      });
+      response.write(file, "binary");
+      response.end();
+    }
   });
-  response.write("Hello callbackURL\n" + "You've sent: \n" + postData);
-  response.end();
+}
+
+function image(response, postData) {
+  console.log("Request handler 'image' was called.");
+  fs.readFile("./TWN-112-583552.png", "binary", function(error, file) {
+    if (error) {
+      response.writeHead(500, {
+        "Content-Type": "text/plain"
+      });
+      response.write(error + "\n");
+      response.end();
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "image/png"
+      });
+      response.write(file, "binary");
+      response.end();
+    }
+  });
 }
 
 
 exports.root = root;
-exports.callbackURL = callbackURL;
-exports.download = download;
+exports.callback = callback;
+exports.topic = topic;
+exports.image = image;

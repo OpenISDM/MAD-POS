@@ -31,8 +31,8 @@ function start(route, handle) {
     }
   }
 
-  http.createServer(onRequest).listen(8888);
-  console.log('Server has started and running on port ' + 8888);
+  http.createServer(onRequest).listen(80);
+  console.log('Server has started and running on port ' + 80);
 }
 
 exports.start = start;

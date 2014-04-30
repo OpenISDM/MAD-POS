@@ -13,7 +13,7 @@ function subscription() {
   var postData = querystring.stringify({
     'mode': 'subscribe',
     'topic': topicProfile.topic_url,
-    'callback': 'http://140.109.22.181/callbackURL'
+    'callback': 'http://140.109.22.181/callback'
   });
 
   // An object of options to indicate where to post to

@@ -4,8 +4,7 @@ var fs = require('fs');
 http.createServer(function(req, res) {
   // The filename is simple the local directory and tacks on the requested url
   // var filename = __dirname+req.url;
-  var filename = "./topicProfile.json" + req.url;
-
+  var filename = "./TWN-112-583552.png"; 
   // This line opens the file as a readable stream
   var readStream = fs.createReadStream(filename);
 
