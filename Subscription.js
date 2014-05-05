@@ -6,7 +6,7 @@ var http = require('http');
 var querystring = require('querystring');
 var fs = require('fs');
 var url = require('url');
-var topicProfile = require("./topicProfile.json");
+var topicProfile = require("./Resource/topicProfile.json");
 
 function subscription() {
   // Bulid the post string from an object
