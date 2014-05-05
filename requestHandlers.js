@@ -1,5 +1,5 @@
 var fs = require('fs');
-var outputFilepath = './topicContent.json';
+var outputFilepath = './Resource/TopicContent.json';
 
 function root(response, postData, topicContent) {
   console.log("Request handler 'root' was called.");

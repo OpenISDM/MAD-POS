@@ -6,7 +6,7 @@ var http = require('http');
 var querystring = require('querystring');
 var fs = require("fs");
 //Read topicProfile.json
-var outputFilepath = './topicProfile.json';
+var outputFilepath = './Resource/topicProfile.json';
 
 function registratoin() {
   // Bulid the post string from an object
