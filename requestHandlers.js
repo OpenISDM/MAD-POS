@@ -1,5 +1,5 @@
 var fs = require('fs');
-var outputFilepath = './Resource/TopicContent.json';
+var outputFilepath = './Resource/topicContent.json';
 
 function root(response, postData, topicContent) {
   console.log("Request handler 'root' was called.");
@@ -12,7 +12,7 @@ function root(response, postData, topicContent) {
 
 function callback(response, postData, topicContent) {
   console.log("Request handler 'callbackURL' was called.");
-  // console.log('callback==topicContent=====: ' + topicContent);
+  console.log('callback==topicContent=====: ' + topicContent);
   fs.writeFile(outputFilepath, topicContent, function(err) {
     if (err) {
       console.log(err);
@@ -29,7 +29,7 @@ function callback(response, postData, topicContent) {
 
 function topic(response, postData, topicContent) {
   console.log("Request handler 'download' was called.");
-  fs.readFile("./topicContent.json", "binary", function(error, file) {
+  fs.readFile("./Resource/topicContent.json", "binary", function(error, file) {
     if (error) {
       response.writeHead(500, {
         "Content-Type": "text/plain"
@@ -48,7 +48,7 @@ function topic(response, postData, topicContent) {
 
 function image(response, postData, topicContent) {
   console.log("Request handler 'image' was called.");
-  fs.readFile("./TWN-112-583552.png", "binary", function(error, file) {
+  fs.readFile("./Resource/TWN-112-583552.png", "binary", function(error, file) {
     if (error) {
       response.writeHead(500, {
         "Content-Type": "text/plain"
