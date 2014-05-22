@@ -7,10 +7,38 @@ import requests
 
 app = Flask(__name__)
 
+topic_url = ''
 
 @app.route('/callback', methods=['POST'])
-def callback():
-    return ''
+def callbackPost():
+    f = request.files['the_file']
+    f.save('./Resource/ex4.rdf')
+    return 'POST OK'
+
+
+@app.route('/callback', methods=['GET'])
+def callbackGet():
+    query_string = request.args
+    topic_url = query_string.get('hub.challenge')
+    print topic_url
+    if query_string.get('hub.mode') == 'denied':
+        # print query_string.get('hub.mode')
+        # print query_string.get('hub.topic')
+        # print query_string.get('hub.reason')
+        return 'Subscription Denied'
+    elif query_string.get('hub.mode') == 'subscribe' or query_string.get('hub.mode') == 'unsubscribe':
+        if topic_url == query_string.get('hub.challenge'):
+            if 'hub.challenge' in query_string:
+                return query_string.get('hub.challenge')
+            else :
+                return 'No value of hub.challenge'
+        else :
+            resp = make_response(render_template('Unknown.html'), 406)
+            return resp
+    else :
+        resp = make_response(render_template('Unknown.html'), 406)
+        return resp
+
 
 
 class startServer:
@@ -19,7 +47,7 @@ class startServer:
         self.long_lat = longlat
         self.pos_type = postype
         self.is_url = isurl
-        self.hub_url = 'http://localhost:5000/hub'
+        self.hub_url = ''
         self.topic_url = ''
 
     def discovery(self):
@@ -32,16 +60,17 @@ class startServer:
         self.topic_url = r.links["self"]["url"]
 
     def subscribe(self):
-    	headers = {'content-type': 'application/x-www-form-urlencoded'}
-    	payload = {'hub.mode': 'subscribe', 'hub.topic': self.topic_url, 'hub.callback': 'http://localhost:8888/callback' }
-    	url = self.hub_url
-    	r = requests.post(url, data=payload, headers=headers)
-    	print 'sub.text %s' % r.text
-    	print 'sub.headers %s' % r.headers
+        headers = {'content-type': 'application/x-www-form-urlencoded'}
+        payload = {'hub.mode': 'subscribe', 'hub.topic': self.topic_url,
+                   'hub.callback': 'http://localhost:8888/callback'}
+        url = self.hub_url
+        r = requests.post(url, data=payload, headers=headers)
+        print 'sub.text %s' % r.text
+        print 'sub.headers %s' % r.headers
 
 if __name__ == '__main__':
-    start = startServer('234023423,234234234', 'fixed', 'http://localhost/hub')
-    start.discovery()
-    start.subscribe()
+    # start = startServer('234023423,234234234', 'fixed', 'http://localhost/hub')
+    # start.discovery()
+    # start.subscribe()
     app.debug = True
     app.run(host='0.0.0.0', port=int("8888"))
