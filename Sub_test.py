@@ -1,8 +1,11 @@
 import requests
 
-url = 'http://localhost:8888/5000'
+url = 'http://localhost:8888/callback'
+headers = {'enctype': 'multipart/form-data'}
+files = {'image': open('./Resource/image.jpg', 'rb'),
+         'rdf': open('./Resource/ex4.rdf', 'rb')}
 
-files = {'file': open('ex4.rdf', 'rb')}
+print files
 
 r = requests.post(url, files=files)
-r.text
+print r.text

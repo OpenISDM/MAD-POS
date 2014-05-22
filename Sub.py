@@ -7,12 +7,29 @@ import requests
 
 app = Flask(__name__)
 
+
+# This is the path to the upload directory
+app.config['UPLOAD_FOLDER'] = 'uploads/'
+# These are the extension that we are accepting to be uploaded
+app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'rdf'])
+
+# For a given file, return whether it's an allowed type or not
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
+
 topic_url = ''
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
-    f = request.files['the_file']
-    f.save('./Resource/ex4.rdf')
+    print 'hello'
+    f = request.files['image']
+    print f
+    f.save('./Resource/image-copy.jpg')
+    d = request.files['rdf']
+    print f
+    d.save('./Resource/ex4-copy.rdf')
+
     return 'POST OK'
 
 
