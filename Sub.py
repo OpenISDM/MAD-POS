@@ -11,14 +11,18 @@ app = Flask(__name__)
 # This is the path to the upload directory
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 # These are the extension that we are accepting to be uploaded
-app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'rdf'])
+app.config['ALLOWED_EXTENSIONS'] = set(
+    ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'rdf'])
 
 # For a given file, return whether it's an allowed type or not
+
+
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
 
 topic_url = ''
+
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
@@ -47,15 +51,14 @@ def callbackGet():
         if topic_url == query_string.get('hub.challenge'):
             if 'hub.challenge' in query_string:
                 return query_string.get('hub.challenge')
-            else :
+            else:
                 return 'No value of hub.challenge'
-        else :
+        else:
             resp = make_response(render_template('Unknown.html'), 406)
             return resp
-    else :
+    else:
         resp = make_response(render_template('Unknown.html'), 406)
         return resp
-
 
 
 class startServer:
