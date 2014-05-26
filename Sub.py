@@ -7,57 +7,40 @@ import requests
 
 app = Flask(__name__)
 
-
-# This is the path to the upload directory
-app.config['UPLOAD_FOLDER'] = 'uploads/'
-# These are the extension that we are accepting to be uploaded
-app.config['ALLOWED_EXTENSIONS'] = set(
-    ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'rdf'])
-
-# For a given file, return whether it's an allowed type or not
-
-
-def allowed_file(filename):
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
-
 topic_url = ''
 
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
-    print 'hello'
-    f = request.files['image']
-    print f
-    f.save('./Resource/image-copy.jpg')
-    d = request.files['rdf']
-    print f
-    d.save('./Resource/ex4-copy.rdf')
-
+    f = request.files['file']
+    print request.headers
+    convert_filename_str = str(f)
+    filename = convert_filename_str.rsplit("'",3)[1]
+    f.save('./Cache/' + filename)
     return 'POST OK'
 
 
 @app.route('/callback', methods=['GET'])
 def callbackGet():
     query_string = request.args
-    topic_url = query_string.get('hub.challenge')
-    print topic_url
     if query_string.get('hub.mode') == 'denied':
-        # print query_string.get('hub.mode')
-        # print query_string.get('hub.topic')
-        # print query_string.get('hub.reason')
-        return 'Subscription Denied'
+        resp = make_response(render_template('Accepted.html'), 202)
+        return resp
     elif query_string.get('hub.mode') == 'subscribe' or query_string.get('hub.mode') == 'unsubscribe':
-        if topic_url == query_string.get('hub.challenge'):
+        if topic_url == query_string.get('hub.topic'):
             if 'hub.challenge' in query_string:
+                print query_string.get('hub.challenge')
                 return query_string.get('hub.challenge')
             else:
-                return 'No value of hub.challenge'
+                print 'No value of hub.challenge, topic url is right'
+                return 'No value of hub.challenge, topic url is right'
         else:
             resp = make_response(render_template('Unknown.html'), 406)
+            print '406'
             return resp
     else:
         resp = make_response(render_template('Unknown.html'), 406)
+        print '406'
         return resp
 
 
@@ -93,4 +76,4 @@ if __name__ == '__main__':
     # start.discovery()
     # start.subscribe()
     app.debug = True
-    app.run(host='0.0.0.0', port=int("8888"))
+    app.run(host='0.0.0.0', port=int("888"))
