@@ -4,9 +4,14 @@
 from flask import Flask, request, after_this_request, make_response, \
     render_template
 import requests
+import sys
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def root():
+    print >> sys.stderr, "Start Server.....#1"
+    return 'Server Check OK!!!!'
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
@@ -67,6 +72,7 @@ class startServer:
 
     def subscribe(self):
         print 'subscirbe.....'
+        print >> sys.stderr, "subscirbe....."
         headers = {'content-type': 'application/x-www-form-urlencoded'}
         payload = {'hub.mode': 'subscribe', 'hub.topic': self.topic_url,
                    'hub.callback': 'http://140.109.22.153/callback'}
@@ -78,9 +84,9 @@ class startServer:
         print 'sub.headers %s' % r.headers
 
 if __name__ == '__main__':
-    print 'Start Server.....'
+    print >> sys.stderr, "Start Server.....#2"
     start = startServer('234023423,234234234', 'fixed', 'http://140.109.22.227/hub')
     start.discovery()
     start.subscribe()
     app.debug = True
-    app.run(host='140.109.22.153', port=int("80"))
+    #app.run(host='140.109.22.153', port=int("80"))
