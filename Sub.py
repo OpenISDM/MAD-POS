@@ -16,6 +16,9 @@ def root():
     print >> sys.stderr, "Start Server.....#1"
     return 'Server Check OK!!!!'
 
+@app.route('/webapp', methods=['GET'])
+def web_local_app():
+    return render_template('index.html')
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
@@ -96,9 +99,9 @@ class startServer:
 
 
 if __name__ == '__main__':
-    start = startServer(
-        '234023423,234234234', 'fixed', 'http://140.109.22.181:8080/hub')
-    start.discovery()
-    start.subscribe()
+    # start = startServer(
+    #     '234023423,234234234', 'fixed', 'http://140.109.22.181:8080/hub')
+    # start.discovery()
+    # start.subscribe()
     app.debug = True
     app.run(host='140.109.22.181', port=int("8888"), threaded=True)
