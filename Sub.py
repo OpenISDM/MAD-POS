@@ -13,6 +13,16 @@ app = Flask(__name__)
 topic_url = 'http://140.109.22.227/topic'
 resourcePath = os.path.abspath('./pythoncodes/mad_pos/Resource')
 
+# These are the extension that we are accepting to be uploaded
+app.config['ALLOWED_EXTENSIONS'] = set(['json', 'rdf', 'png', 'jpg', 'jpeg', 'gif'])
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+    filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
+
+
+
 @app.route('/', methods=['GET'])
 def root():
     print >> sys.stderr, "Start Server.....#1"
@@ -40,11 +50,22 @@ def getTopic(topic_file):
 @app.route('/callback', methods=['POST'])
 def callbackPost():
     f = request.files['file']
-    print >> sys.stderr, request.headers
-    convert_filename_str = str(f)
-    filename = convert_filename_str.rsplit("'", 3)[1]
-    f.save('./Cache/' + filename)
-    return 'POST OK'
+    if f and allowed_file(f.filename):
+        print >> sys.stderr, request.headers
+        extension = f.filename.rsplit('.', 1)[1]
+        if extension == 'rdf':
+            fileanme = 'dataFiles.rdf'
+        elif extension == 'json':
+            filename = 'dataFiles.json'
+        elif extension == 'png':
+            filename = 'imgMaps.png'
+        elif extension == 'jpg':
+            filename = 'imgMaps.jpg'
+        else:
+            pass
+        f.save(resourcePath + '/' + filename)
+        return 'POST OK'
+    return 'POST file is not correct'
 
 
 @app.route('/callback', methods=['GET'])
