@@ -2,20 +2,40 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, request, after_this_request, make_response, \
-    render_template, url_for, redirect, abort
+    render_template, url_for, redirect, abort, send_file
 import requests
+import json
 import sys
+import os
 
 app = Flask(__name__)
 
-topic_url = 'http://140.109.22.181:8080/topic'
-
+topic_url = 'http://140.109.22.227/topic'
+resourcePath = os.path.abspath('./pythoncodes/mad_pos/Resource')
 
 @app.route('/', methods=['GET'])
 def root():
     print >> sys.stderr, "Start Server.....#1"
     return 'Server Check OK!!!!'
 
+@app.route('/topic/<topic_file>', methods=['GET'])
+def getTopic(topic_file):
+    print >> sys.stderr, "getTopic with " + topic_file
+    
+    if topic_file == 'rdf':
+        filePath = resourcePath + '/dataFiles.rdf'
+        if os.path.exists(filePath):
+            return send_file(filePath, mimetype='application/rdf+xml', as_attachment=True, attachment_filename='dataFiles.rdf')
+    elif topic_file == 'json':
+        filePath = resourcePath + '/dataFiles.json'
+        if os.path.exists(filePath):
+            return send_file(filePath, mimetype='application/json', as_attachment=True, attachment_filename='dataFiles.json')
+    elif topic_file == 'img':
+        filePath = resourcePath + '/imgMaps.png'
+        if os.path.exists(filePath):
+            return send_file(filePath, mimetype='image/png', as_attachment=False, attachment_filename='imgMaps.png')
+    else:
+      return 'empty'
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
@@ -30,15 +50,14 @@ def callbackPost():
 @app.route('/callback', methods=['GET'])
 def callbackGet():
     query_string = request.args
+    print >> sys.stderr, query_string
     if query_string.get('hub.mode') == 'denied':
         resp = make_response(render_template('Accepted.html'), 202)
         return resp
     elif query_string.get('hub.mode') == 'subscribe' or query_string.get('hub.mode') == 'unsubscribe':
-        app.logger.debug(topic_url)
-        app.logger.debug(query_string.get('hub.topic'))
         if topic_url == query_string.get('hub.topic'):
             if 'hub.challenge' in query_string:
-                app.logger.debug(query_string.get('hub.challenge'))
+                print >> sys.stderr, query_string.get('hub.challenge')
                 return query_string.get('hub.challenge')
             else:
                 print >> sys.stderr, 'No value of hub.challenge, topic url is right'
@@ -70,7 +89,7 @@ class startServer:
 
         r = requests.get(self.is_url, params=payload)
 
-        self.hub_url   = r.links["hub"]["url"]
+        self.hub_url = r.links["hub"]["url"]
         self.topic_url = r.links["self"]["url"]
         print >> sys.stderr,  'Hub = %s' % self.hub_url
         print >> sys.stderr,  'Topic = %s' % self.topic_url
@@ -83,7 +102,7 @@ class startServer:
         payload = {
             'hub.mode': 'subscribe',
             'hub.topic': self.topic_url,
-            'hub.callback': 'http://140.109.22.181:8888/callback'}
+            'hub.callback': 'http://140.109.22.153/callback'}
 
         print >> sys.stderr, "payload..."
         print >> sys.stderr,  payload
@@ -97,8 +116,8 @@ class startServer:
 
 if __name__ == '__main__':
     start = startServer(
-        '234023423,234234234', 'fixed', 'http://140.109.22.181:8080/hub')
+        '234023423,234234234', 'fixed', 'http://140.109.22.227/hub')
     start.discovery()
     start.subscribe()
     app.debug = True
-    app.run(host='140.109.22.181', port=int("8888"), threaded=True)
+    app.run(host='140.109.22.153', port=int("80"), threaded=True)
