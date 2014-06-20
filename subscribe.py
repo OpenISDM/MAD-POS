@@ -68,7 +68,7 @@ def set_up_ngrok(domain):
     Just tell ngrok which port your web server is running on. 
     Let's try opening port 80 to the internet.
     '''
-    subprocess.call(["./ngrok","-authtoken", \
+    subprocess.Pepon(["./ngrok","-authtoken", \
     "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)])
 
 def get_opt(argv):
@@ -111,7 +111,8 @@ def get_opt(argv):
 
     # default Callback domain = subscribera
     # POS Callback URL : http://subscribera.ngrok.com
-    set_up_ngrok(callback_domain)
+    # TO DO set_up_ngrok(callback_domain)
+    #
 
     # Call subscriber function
     subscribe(pos_id, is_url, pos_type)
@@ -130,7 +131,7 @@ def subscribe(pos_id, is_url, pos_type):
         'Content-Type': 'text/plain; charset=utf-8',
         'Accept-Language': 'en-US,en;q=0.8'}
     r = requests.get(is_url, params=payload)
-
+    
     logger.info('Hub URL : ' + r.links['hub']['url'])
     logger.info('Topic URL : ' + r.links['self']['url'])
 
@@ -138,21 +139,22 @@ def subscribe(pos_id, is_url, pos_type):
     hub_url = r.links['hub']['url']
 
     # Storing topic URL
-    # payload = {
-    #     'url': topic_url}
-    # r = requests.get('http://127.0.0.1/settopicurl', params=payload)
-    # print 'set up url', r.status_code
+    payload = {
+        'url': topic_url}
+    r = requests.get('http://127.0.0.1/settopicurl', params=payload)
+    logger.info('Results : ' + r.text)
 
-    # headers = {'content-type': 'application/x-www-form-urlencoded'}
-    # payload = {
-    #     'hub.mode': 'subscribe',
-    #     'hub.topic': topic_url,
-    #     'hub.callback': 'http://subscribera.ngrok.com/callback'}
 
     # Starting subscriber
-    # r = requests.post(hub_url, data=payload, headers=headers)
-    # print r.text
-    # print r.headers
+    headers = {'content-type': 'application/x-www-form-urlencoded'}
+    payload = {
+        'hub.mode': 'subscribe',
+        'hub.topic': topic_url,
+        'hub.callback': 'http://subscribera.ngrok.com/callback'}
+
+    r = requests.post(hub_url, data=payload, headers=headers)
+    logger.info('Interface Server Response Status Code : ' + str(r.status_code))
+    logger.info('Interface Server Response Results : ' + r.content)
 
 if __name__ == "__main__":
     get_opt(sys.argv[1:])

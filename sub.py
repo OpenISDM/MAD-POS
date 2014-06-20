@@ -94,8 +94,8 @@ def callbackPost():
     if f and allowed_file(f.filename):
         extension = f.filename.rsplit('.', 1)[1]
         f.save(resourcePath + '/Cache.' + extension)
-        return 'POST OK'
-    return 'POST file is not correct'
+        return 'PUSH　Success'
+    return 'PUSH file is not correct'
 
 
 @app.route('/settopicurl', methods=['GET'])
@@ -104,7 +104,8 @@ def settopicurl():
     topic_url = request.args.get('url')
     print >> sys.stderr, '/settopicurl/topic_url'
     print >> sys.stderr, topic_url
-    return 'good job! %s' % topic_url
+    # resp_content = 'Store Topic URL　Success! %s' % topic_url
+    return 'Store Topic URL　Success!'
 
 
 @app.route('/callback', methods=['GET'])
