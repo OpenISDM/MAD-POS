@@ -1,15 +1,90 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+""""
+    Copyright (c) 2014  OpenISDM
+
+    Project Name: 
+
+        OpenISDM MAD
+
+    Version:
+
+        1.0
+
+    File Name:
+
+        subscribe.py
+
+    Abstract:
+
+        PubHub.py is a module of Interface Server (IS) of 
+        Mobile Assistance for Disasters (MAD) in the OpenISDM 
+        Virtual Repository project.
+        Subscribing to a topic URL consists of four parts 
+        that may occur immediately in sequence or have a delay.
+
+    Authors:  
+
+        Johnson Su, johnsonsu@iis.sinica.edu.tw
+
+    License:
+
+        GPL 3.0 This file is subject to the terms and conditions defined 
+        in file 'COPYING.txt', which is part of this source code package.
+
+    Major Revision History:
+
+        2014/6/3: complete version 1.0
+        2014/6/10: complete version 1.1
+
+
+"""
 
 import sys
 import getopt
 import requests
+import logging
+import subprocess
 
+logger = logging.getLogger('Subscribe')
+logger.setLevel(logging.INFO)
 
-def main(argv):
+# Produce formater first
+formatter = logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+# Setup Handler
+console = logging.StreamHandler()
+console.setLevel(logging.INFO)
+console.setFormatter(formatter)
+
+# Setup Logger
+logger.addHandler(console)
+logger.setLevel(logging.INFO)
+
+def set_up_ngrok(domain):
+    '''
+    ngrok lets you expose a locally running web service to the internet. 
+    Just tell ngrok which port your web server is running on. 
+    Let's try opening port 80 to the internet.
+    '''
+    subprocess.call(["./ngrok","-authtoken", \
+    "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)])
+
+def get_opt(argv):
+    '''
+    Create a command program to get arg and opt.
+    
+     @param {String} [pos_id] POS ID for Interface Server
+     @param {String} [pos_type] POS type for Interface Server
+     @param {String} [is_url] Interface URL for HTTP requests
+     @param {String} [callback_domain] Callback domain for POS to set up callback URL
+    '''
     pos_id = ''
-    pos_type = 'fix'  # pos_type = fix or mobile default:fix
+    pos_type = 'fix'  
     is_url = 'http://140.109.22.197/hub/'
+    callback_domain = 'subscribera'
+
     try:
         opts, args = getopt.getopt(
             argv, "hP:U:Y:", ["posid=", "isurl=", "help", "postype="])
@@ -30,13 +105,23 @@ def main(argv):
                 is_url = arg
             elif opt in ("-Y", "--postype"):
                 pos_type = arg
-    print 'POS ID is "', pos_id
-    print 'POS Type is "', pos_type
-    print 'Interface Server URL is "', is_url
-    discovery(pos_id, is_url, pos_type)
+    logger.info('POS-ID : ' + pos_id)
+    logger.info('POS-Type : ' + pos_type)
+    logger.info('Interface Server URL : ' + is_url)
+
+    # default Callback domain = subscribera
+    # POS Callback URL : http://subscribera.ngrok.com
+    set_up_ngrok(callback_domain)
+
+    # Call subscriber function
+    subscribe(pos_id, is_url, pos_type)
 
 
-def discovery(pos_id, is_url, pos_type):
+def subscribe(pos_id, is_url, pos_type):
+    '''
+    '''
+
+    # discovery
     payload = {
         'posId': pos_id,
         'posType': pos_type}
@@ -45,20 +130,29 @@ def discovery(pos_id, is_url, pos_type):
         'Content-Type': 'text/plain; charset=utf-8',
         'Accept-Language': 'en-US,en;q=0.8'}
     r = requests.get(is_url, params=payload)
-    print 'Hub URL', r.links['hub']['url']
-    print 'Topic URL', r.links['self']['url']
 
-    headers = {'content-type': 'application/x-www-form-urlencoded'}
-    payload = {
-        'hub.mode': 'subscribe',
-        'hub.topic': r.links['self']['url'],
-        'hub.callback': 'http://subscriber.ngrok.com/callback'}
+    logger.info('Hub URL : ' + r.links['hub']['url'])
+    logger.info('Topic URL : ' + r.links['self']['url'])
 
-    r = requests.post(r.links['hub']['url'], data=payload, headers=headers)
-    print r.text
-    print r.headers
+    topic_url = r.links['self']['url']
+    hub_url = r.links['hub']['url']
 
-# print >> sys.stderr, 'sub.status_code %s' % r.status_code
+    # Storing topic URL
+    # payload = {
+    #     'url': topic_url}
+    # r = requests.get('http://127.0.0.1/settopicurl', params=payload)
+    # print 'set up url', r.status_code
+
+    # headers = {'content-type': 'application/x-www-form-urlencoded'}
+    # payload = {
+    #     'hub.mode': 'subscribe',
+    #     'hub.topic': topic_url,
+    #     'hub.callback': 'http://subscribera.ngrok.com/callback'}
+
+    # Starting subscriber
+    # r = requests.post(hub_url, data=payload, headers=headers)
+    # print r.text
+    # print r.headers
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    get_opt(sys.argv[1:])

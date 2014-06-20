@@ -1,5 +1,44 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+""""
+    Copyright (c) 2014  OpenISDM
+
+    Project Name: 
+
+        OpenISDM MAD
+
+    Version:
+
+        1.0
+
+    File Name:
+
+        sub.py
+
+    Abstract:
+
+        sub.py is a module of Interface Server (IS) of 
+        Mobile Assistance for Disasters (MAD) in the OpenISDM 
+        Virtual Repository project.
+        It handling the requests from Interface Server.
+
+    Authors:  
+
+        Johnson Su, johnsonsu@iis.sinica.edu.tw
+
+    License:
+
+        GPL 3.0 This file is subject to the terms and conditions defined 
+        in file 'COPYING.txt', which is part of this source code package.
+
+    Major Revision History:
+
+        2014/6/3: complete version 1.0
+        2014/6/4: complete version 1.1
+        2014/6/6: complete version 1.2
+
+
+"""
 
 from flask import Flask, request, after_this_request, make_response, \
     render_template, url_for, redirect, abort, send_file
