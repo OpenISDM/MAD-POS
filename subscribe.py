@@ -68,7 +68,7 @@ def set_up_ngrok(domain):
     Just tell ngrok which port your web server is running on. 
     Let's try opening port 80 to the internet.
     '''
-    subprocess.Pepon(["./ngrok","-authtoken", \
+    subprocess.Popen(["nohup","./ngrok","-log=stdout","-authtoken", \
     "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)])
 
 def get_opt(argv):
@@ -78,12 +78,11 @@ def get_opt(argv):
      @param {String} [pos_id] POS ID for Interface Server
      @param {String} [pos_type] POS type for Interface Server
      @param {String} [is_url] Interface URL for HTTP requests
-     @param {String} [callback_domain] Callback domain for POS to set up callback URL
+     @param {String} [subdomain] Callback domain for POS to set up callback URL
     '''
     pos_id = ''
     pos_type = 'fix'  
-    is_url = 'http://140.109.22.197/hub/'
-    callback_domain = 'subscribera'
+    is_url = 'http://140.109.17.57/hub/'
 
     try:
         opts, args = getopt.getopt(
@@ -111,8 +110,7 @@ def get_opt(argv):
 
     # default Callback domain = subscribera
     # POS Callback URL : http://subscribera.ngrok.com
-    # TO DO set_up_ngrok(callback_domain)
-    #
+    set_up_ngrok(pos_id)
 
     # Call subscriber function
     subscribe(pos_id, is_url, pos_type)
@@ -150,7 +148,7 @@ def subscribe(pos_id, is_url, pos_type):
     payload = {
         'hub.mode': 'subscribe',
         'hub.topic': topic_url,
-        'hub.callback': 'http://subscribera.ngrok.com/callback'}
+        'hub.callback': 'http://' + pos_id +'.ngrok.com/callback'}
 
     r = requests.post(hub_url, data=payload, headers=headers)
     logger.info('Interface Server Response Status Code : ' + str(r.status_code))

@@ -1,13 +1,12 @@
 import subprocess
 
-url='subscriberadds'
+# child = subprocess.Popen(["./ngrok","-log=stdout",\
+# 	"-subdomain=testingqwer","-authtoken","W_0D4KY5as11SvSupBMT","80"],stdout= subprocess.PIPE)
 
-# child1 = subprocess.Popen(["./ngrok","-authtoken", \
-# 	"W_0D4KY5as11SvSupBMT", "-subdomain=" + url, '80','&'])
-# child1 = subprocess.Popen(["./ngrok -authtoken W_0D4KY5as11SvSupBMT -subdomain=subscriberadds 80 &"],stdout=subprocess.PIPE)
-# out = child1.communicate()
-# subprocess.call(["ls", "-l"])
-subprocess.call("ls", shell=True)
+# child = subprocess.Popen(["ping","-c","5","www.google.com"],stdout= subprocess.PIPE)
 
-print("parent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent processparent process")
-# print(out)
+# child = subprocess.Popen(["./ngrok -log=stdout 80&"],shell=True)
+child = subprocess.Popen(["nohup","./ngrok","-log=stdout",\
+	"-subdomain=testing546asdfasdf","-authtoken","W_0D4KY5as11SvSupBMT","80"])
+
+print("codsdfsd")
