@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<THEEmployees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Employee name="John Doe">
+        <email>jdoe@email.com</email>
+        <jobtitle>Software Engineer</jobtitle>
+        <address>San Bernardino, CA</address>
+        <workphone>555-555-1212</workphone>
+        <homephone>444-555-1212</homephone>
+        <cellphone>333-555-1212</cellphone>
+        <fax>N/A</fax>
+        <contractor>No</contractor>
+    </Employee>
+    <Employee name="Sam Jones">
+        <email>sjones@email.com</email>
+        <jobtitle>Sotware Developer</jobtitle>
+        <address>San Francisco, CA</address>
+        <workphone>888-888-8888</workphone>
+        <homephone>999-999-9999</homephone>
+        <cellphone>101-010-1010</cellphone>
+        <fax>555-555-6666</fax>
+        <contractor>No</contractor>
+    </Employee>
+    <Employee name="Hank Tree">
+        <email>htree@email.com</email>
+        <jobtitle>Software Developer</jobtitle>
+        <address>Everett, WA</address>
+        <workphone>898-899-9955</workphone>
+        <homephone>456-564-5566</homephone>
+        <cellphone>899-999-9989</cellphone>
+        <contractor>Yes</contractor>
+    </Employee>
+    <Employee name="Urki Yuri">
+        <email>uyuri@email.com</email>
+        <jobtitle>Project Engineer</jobtitle>
+        <address>Washington DC</address>
+        <workphone>222-222-2222</workphone>
+        <cellphone>222-222-2222</cellphone>
+        <fax>569-596-5696</fax>
+        <contractor>No</contractor>
+    </Employee>
+</THEEmployees>

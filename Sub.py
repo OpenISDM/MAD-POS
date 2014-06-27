@@ -2,13 +2,27 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, request, after_this_request, make_response, \
-    render_template, url_for, redirect, abort
+    render_template, url_for, redirect, abort, send_from_directory
 import requests
 import sys
+import os
+
 
 app = Flask(__name__)
 
 topic_url = 'http://140.109.22.181:8080/topic'
+
+app.config['UPLOAD_FOLDER'] = 'Cache/'
+
+
+@app.route('/testjavascript', methods=['GET'])
+def test_javascript_load_xml():
+    return render_template('testjavascript.html')
+
+
+@app.route('/cache/<filename>')
+def uploaded_file(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
 @app.route('/', methods=['GET'])
@@ -16,9 +30,11 @@ def root():
     print >> sys.stderr, "Start Server.....#1"
     return 'Server Check OK!!!!'
 
+
 @app.route('/webapp', methods=['GET'])
 def web_local_app():
     return render_template('index.html')
+
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
@@ -73,7 +89,7 @@ class startServer:
 
         r = requests.get(self.is_url, params=payload)
 
-        self.hub_url   = r.links["hub"]["url"]
+        self.hub_url = r.links["hub"]["url"]
         self.topic_url = r.links["self"]["url"]
         print >> sys.stderr,  'Hub = %s' % self.hub_url
         print >> sys.stderr,  'Topic = %s' % self.topic_url
@@ -104,4 +120,4 @@ if __name__ == '__main__':
     # start.discovery()
     # start.subscribe()
     app.debug = True
-    app.run(host='140.109.22.181', port=int("8888"), threaded=True)
+    app.run(host='140.109.22.181', port=int("80"), threaded=True)

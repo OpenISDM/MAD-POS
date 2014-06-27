@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    var xmlreturn = "";
+
+    function loadXML(file) {
+        var xmlhttp;
+
+        if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else { // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        // xmlhttp.onreadystatechange = function() {
+        //     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        //         xmlreturn = xmlhttp.responseText;
+        //     }
+        // }
+
+        xmlhttp.open("GET", file, false);
+        xmlhttp.send();
+        // alert(xmlhttp.responseXML)
+        // alert(xmlhttp.responseText)
+        xmlreturn = xmlhttp.responseText;
+        return xmlreturn
+    }
+
+    function ParserXML() {
+        // xmlFile = "http://140.109.22.181/cache/w3s.rdf";
+        // xmlFile = "http://140.109.22.181/cache/example_no_ns1.rdf";
+        xmlFile = "http://140.109.22.181/cache/note.xml";
+        xmlData = loadXML(xmlFile);
+        // alert(xmlData);
+        if (window.DOMParser) {
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(xmlData, "application/xml");
+        } else // code for IE
+        {
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.loadXML(xmlData);
+        }
+        lengthDom = xmlDoc.getElementsByTagName("title")
+        alert(lengthDom.length)
+        var text = "";
+        for (i = 0; i < lengthDom.length; i = i + 1) {
+            text = text + lengthDom[i].childNodes[0].nodeValue + "<br>";
+        }
+        alert(text);
+        // something = xmlDoc.getElementsByTagName("rdf:Descriptionrdf:about").nodeValue;
+        // alert(something)
+        // if element in something{
+
+        // }
+    }
+    </script>
+</head>
+
+<body>
+
+    <div id="myDiv">
+        <h2>Let AJAX change this text</h2>
+    </div>
+    <button type="button" onclick="ParserXML()">Change Content</button>
+
+</body>
+
+</html>

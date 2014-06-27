@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1 charset=utf-8">
+        <link rel="stylesheet" href="/static/css/jquery.mobile-1.4.1.min.css">
+        <script src="/static/javascript/jquery-1.10.2.min.js"></script>
+        <script src="/static/javascript/jquery.mobile-1.4.1.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="pageone" data-theme="b">
+            <div data-role="header">
+                <a href="#pagetwo" data-transition="pop" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-location ui-btn-icon-left">Map</a>
+                <h1>MAD Application</h1>
+                <a href="#pagetwo" data-transition="pop" class="ui-btn ui-btn-right ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li data-role="divider">Shelter List</li>
+                    <li>
+                        <a href="#">
+                        <h2>南港運動中心</h2>
+                        <p>臺北市南港區玉成街69號</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <h2>臺北市政府消防局 南港分隊</h2>
+                        <p>台北市興中路6號</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <h2>東新國小</h2>
+                        <p>臺北市南港區興南街62號</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <h2>成德國小</h2>
+                        <p>臺北市南港區東新街65號</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <h2>內湖運動中心</h2>
+                        <p>臺北市內湖區洲子街12號</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <h2>信義運動中心</h2>
+                        <p>臺北市信義區松勤街100號</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="home">Shelter</a></li>
+                        <li><a href="#" data-icon="star">Police</a></li>
+                        <li><a href="#" data-icon="shop">Market</a></li>
+                        <li><a href="#" data-icon="heart">Hospital</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="pagetwo" data-theme="b">
+            <div data-role="header">
+                <a href="#pageone" data-transition="pop" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">List</a>
+                <h1>Welcome To MAD App</h1>
+                <a href="#pageone" data-transition="pop" class="ui-btn ui-btn-right ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+            </div>
+            <div data-role="main" class="ui-content">
+            <img src="/staticmap.png">
+            </div>
+            <div data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="home">Shelter</a></li>
+                        <li><a href="#" data-icon="star">Police</a></li>
+                        <li><a href="#" data-icon="shop">Market</a></li>
+                        <li><a href="#" data-icon="heart">Hospital</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
