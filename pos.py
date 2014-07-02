@@ -50,7 +50,8 @@ import os
 app = Flask(__name__)
 
 topic_url = ''
-resourcePath = os.path.abspath('./pythoncodes/mad_pos/Resource')
+
+app.config['UPLOAD_FOLDER'] = 'Cache/'
 
 # These are the extension that we are accepting to be uploaded
 app.config['ALLOWED_EXTENSIONS'] = set(
@@ -63,6 +64,7 @@ def allowed_file(filename):
 
 
 @app.route('/', methods=['GET'])
+<<<<<<< HEAD:sub.py
 def root():
     print >> sys.stderr, "Start Server.....#1"
     return 'Server Check OK!!!!'
@@ -86,6 +88,15 @@ def getTopic(topic_file):
             return send_file(filePath, mimetype='image/png', as_attachment=False, attachment_filename='imgMaps.png')
     else:
         return 'empty'
+=======
+def web_local_app():
+    return render_template('index.html')
+
+
+@app.route('/cache/<filename>')
+def uploaded_file(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+>>>>>>> a034e30e8fb2209afbc25ef21f1d7e7c0b08ba57:pos.py
 
 
 @app.route('/callback', methods=['POST'])
@@ -130,5 +141,5 @@ def callbackGet():
             resp = make_response(render_template('Unknown.html'), 406)
             return resp
     else:
-        resp = make_response(render_template('Unknown.html'), 405)
+        resp = make_response(render_template('Unknown.html'), 406)
         return resp
