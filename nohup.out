@@ -1,0 +1,1083 @@
+[06/24/14 15:31:43] [WARN] Failed to get user's home directory: user: Current not implemented on linux/386. Using $HOME: /root
+[06/24/14 15:31:43] [INFO] Reading configuration file /root/.ngrok
+[06/24/14 15:31:43] [INFO] [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[06/24/14 15:31:43] [INFO] [view] [web] Serving web interface on 127.0.0.1:4040
+[06/24/14 15:31:43] [INFO] Checking for update
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] New connection to: 96.126.125.171:443
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"W_0D4KY5as11SvSupBMT","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Waiting to read message
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Reading message with length: 120
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.6","ClientId":"38cf771ee94faf5d1bc80381b533a7d4","Error":""}}
+[06/24/14 15:31:44] [INFO] [client] Authenticated with server, client id: 38cf771ee94faf5d1bc80381b533a7d4
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"c817bdbfe5f801a7","Protocol":"http+https","Hostname":"","Subdomain":"testingqwer","HttpAuth":"","RemotePort":0}}
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Waiting to read message
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Reading message with length: 32
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 15:31:44] [DEBG] [ctl:3ce07e1a] Waiting to read message
+[06/24/14 15:31:45] [DEBG] [pxy:189b8c57] New connection to: 96.126.125.171:443
+[06/24/14 15:31:45] [DEBG] [pxy:189b8c57] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"38cf771ee94faf5d1bc80381b533a7d4"}}
+[06/24/14 15:31:45] [DEBG] [ctl:3ce07e1a] Reading message with length: 139
+[06/24/14 15:31:45] [DEBG] [ctl:3ce07e1a] Read message {"Type":"NewTunnel","Payload":{"ReqId":"","Url":"","Protocol":"","Error":"The tunnel http://testingqwer.ngrok.com is already registered."}}
+[06/24/14 15:31:45] [EROR] [client] Server failed to allocate tunnel: The tunnel http://testingqwer.ngrok.com is already registered.
+[06/24/14 15:31:45] [DEBG] [ctl:3ce07e1a] Waiting to read message
+[06/24/14 15:31:45] [DEBG] [ctl:3ce07e1a] Closing
+[06/24/14 15:31:45] [EROR] control recovering from failure EOF
+[06/24/14 15:31:45] [INFO] Waiting 1 seconds before reconnecting
+[06/24/14 15:31:45] [INFO] [controller] Shutting down
+Server failed to allocate tunnel: The tunnel http://testingqwer.ngrok.com is already registered.
+[06/24/14 15:33:00] [WARN] Failed to get user's home directory: user: Current not implemented on linux/386. Using $HOME: /root
+[06/24/14 15:33:00] [INFO] Reading configuration file /root/.ngrok
+[06/24/14 15:33:00] [INFO] [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[06/24/14 15:33:00] [INFO] [view] [web] Serving web interface on 127.0.0.1:4040
+[06/24/14 15:33:00] [INFO] Checking for update
+[06/24/14 15:33:00] [DEBG] [ctl:4de79273] New connection to: 96.126.125.171:443
+[06/24/14 15:33:00] [DEBG] [ctl:4de79273] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"W_0D4KY5as11SvSupBMT","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[06/24/14 15:33:00] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Reading message with length: 120
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.6","ClientId":"e0935e7fc7972ef271235f6e2be06a76","Error":""}}
+[06/24/14 15:33:01] [INFO] [client] Authenticated with server, client id: e0935e7fc7972ef271235f6e2be06a76
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"db9b92e6cb846b1c","Protocol":"http+https","Hostname":"","Subdomain":"testing546asdfasdf","HttpAuth":"","RemotePort":0}}
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Reading message with length: 32
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:01] [DEBG] [pxy:73f7f70e] New connection to: 96.126.125.171:443
+[06/24/14 15:33:01] [DEBG] [pxy:73f7f70e] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"e0935e7fc7972ef271235f6e2be06a76"}}
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Reading message with length: 132
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Read message {"Type":"NewTunnel","Payload":{"ReqId":"db9b92e6cb846b1c","Url":"http://testing546asdfasdf.ngrok.com","Protocol":"http","Error":""}}
+[06/24/14 15:33:01] [INFO] [client] Tunnel established at http://testing546asdfasdf.ngrok.com
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Reading message with length: 134
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Read message {"Type":"NewTunnel","Payload":{"ReqId":"db9b92e6cb846b1c","Url":"https://testing546asdfasdf.ngrok.com","Protocol":"https","Error":""}}
+[06/24/14 15:33:01] [INFO] [client] Tunnel established at https://testing546asdfasdf.ngrok.com
+[06/24/14 15:33:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:01] [INFO] No update available
+[06/24/14 15:33:01] [DEBG] [pxy:73f7f70e] Waiting to read message
+[06/24/14 15:33:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:33:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:33:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:33:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:28] [DEBG] [pxy:73f7f70e] Reading message with length: 107
+[06/24/14 15:33:28] [DEBG] [pxy:73f7f70e] Read message {"Type":"StartProxy","Payload":{"Url":"http://testing546asdfasdf.ngrok.com","ClientAddr":"140.109.22.181"}}
+[06/24/14 15:33:28] [DEBG] [prv:14176bce] New connection to: 127.0.0.1:80
+[06/24/14 15:33:28] [INFO] [prv:14176bce] Joined with connection pxy:73f7f70e
+[06/24/14 15:33:28] [DEBG] [ctl:4de79273] Reading message with length: 32
+[06/24/14 15:33:28] [DEBG] [ctl:4de79273] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 15:33:28] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:28] [DEBG] [prv:14176bce] Copied 185 bytes to pxy:73f7f70e
+[06/24/14 15:33:28] [DEBG] [prv:14176bce] Closing
+[06/24/14 15:33:28] [DEBG] [pxy:73f7f70e] Closing
+[06/24/14 15:33:28] [WARN] [pxy:73f7f70e] Copied 442 bytes to prv:14176bce before failing with error read tcp 96.126.125.171:443: use of closed network connection
+[06/24/14 15:33:28] [DEBG] [pxy:62435af2] New connection to: 96.126.125.171:443
+[06/24/14 15:33:28] [DEBG] [pxy:62435af2] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"e0935e7fc7972ef271235f6e2be06a76"}}
+[06/24/14 15:33:28] [DEBG] [pxy:62435af2] Waiting to read message
+[06/24/14 15:33:29] [DEBG] [ctl:4de79273] Reading message with length: 32
+[06/24/14 15:33:29] [DEBG] [ctl:4de79273] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 15:33:29] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:29] [DEBG] [pxy:62435af2] Reading message with length: 107
+[06/24/14 15:33:29] [DEBG] [pxy:62435af2] Read message {"Type":"StartProxy","Payload":{"Url":"http://testing546asdfasdf.ngrok.com","ClientAddr":"140.109.22.181"}}
+[06/24/14 15:33:29] [DEBG] [prv:6718e357] New connection to: 127.0.0.1:80
+[06/24/14 15:33:29] [INFO] [prv:6718e357] Joined with connection pxy:62435af2
+[06/24/14 15:33:29] [DEBG] [prv:6718e357] Copied 392 bytes to pxy:62435af2
+[06/24/14 15:33:29] [DEBG] [prv:6718e357] Closing
+[06/24/14 15:33:29] [DEBG] [pxy:62435af2] Closing
+[06/24/14 15:33:29] [WARN] [pxy:62435af2] Copied 382 bytes to prv:6718e357 before failing with error read tcp 96.126.125.171:443: use of closed network connection
+[06/24/14 15:33:29] [DEBG] [ctl:4de79273] Reading message with length: 32
+[06/24/14 15:33:29] [DEBG] [ctl:4de79273] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 15:33:29] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:33:29] [DEBG] [pxy:761d8114] New connection to: 96.126.125.171:443
+[06/24/14 15:33:29] [DEBG] [pxy:761d8114] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"e0935e7fc7972ef271235f6e2be06a76"}}
+[06/24/14 15:33:29] [DEBG] [pxy:793ee751] New connection to: 96.126.125.171:443
+[06/24/14 15:33:29] [DEBG] [pxy:793ee751] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"e0935e7fc7972ef271235f6e2be06a76"}}
+[06/24/14 15:33:29] [DEBG] [pxy:793ee751] Waiting to read message
+[06/24/14 15:33:29] [DEBG] [pxy:761d8114] Waiting to read message
+[06/24/14 15:33:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:33:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:33:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:33:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:34:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:34:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:34:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:34:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:34:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:34:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:34:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:34:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:34:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:34:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:34:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:34:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:35:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:35:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:35:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:35:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:35:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:35:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:35:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:35:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:35:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:35:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:35:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:35:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:36:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:36:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:36:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:36:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:36:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:36:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:36:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:36:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:36:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:36:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:36:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:36:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:37:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:37:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:37:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:37:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:37:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:37:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:37:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:37:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:37:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:37:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:37:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:37:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:38:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:38:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:38:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:38:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:38:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:38:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:38:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:38:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:38:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:38:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:38:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:38:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:39:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:39:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:39:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:39:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:39:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:39:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:39:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:39:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:39:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:39:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:39:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:39:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:40:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:40:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:40:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:40:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:40:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:40:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:40:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:40:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:40:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:40:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:40:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:40:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:41:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:41:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:41:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:41:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:41:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:41:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:41:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:41:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:41:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:41:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:41:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:41:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:42:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:42:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:42:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:42:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:42:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:42:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:42:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:42:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:42:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:42:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:42:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:42:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:43:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:43:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:43:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:43:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:43:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:43:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:43:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:43:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:43:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:43:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:43:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:43:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:44:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:44:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:44:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:44:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:44:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:44:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:44:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:44:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:44:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:44:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:44:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:44:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:45:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:45:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:45:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:45:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:45:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:45:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:45:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:45:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:45:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:45:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:45:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:45:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:46:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:46:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:46:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:46:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:46:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:46:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:46:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:46:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:46:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:46:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:46:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:46:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:47:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:47:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:47:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:47:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:47:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:47:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:47:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:47:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:47:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:47:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:47:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:47:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:48:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:48:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:48:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:48:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:48:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:48:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:48:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:48:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:48:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:48:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:48:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:48:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:49:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:49:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:49:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:49:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:49:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:49:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:49:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:49:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:49:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:49:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:49:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:49:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:50:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:50:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:50:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:50:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:50:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:50:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:50:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:50:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:50:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:50:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:50:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:50:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:51:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:51:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:51:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:51:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:51:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:51:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:51:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:51:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:51:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:51:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:51:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:51:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:52:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:52:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:52:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:52:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:52:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:52:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:52:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:52:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:52:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:52:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:52:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:52:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:53:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:53:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:53:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:53:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:53:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:53:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:53:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:53:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:53:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:53:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:53:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:53:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:54:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:54:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:54:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:54:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:54:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:54:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:54:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:54:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:54:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:54:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:54:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:54:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:55:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:55:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:55:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:55:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:55:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:55:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:55:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:55:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:55:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:55:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:55:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:55:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:56:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:56:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:56:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:56:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:56:21] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:56:21] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:56:21] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:56:21] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:56:41] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:56:41] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:56:41] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:56:41] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 15:57:01] [DEBG] [ctl:4de79273] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 15:57:01] [DEBG] [ctl:4de79273] Reading message with length: 28
+[06/24/14 15:57:01] [DEBG] [ctl:4de79273] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 15:57:01] [DEBG] [ctl:4de79273] Waiting to read message
+[06/24/14 16:12:30] [WARN] Failed to get user's home directory: user: Current not implemented on linux/386. Using $HOME: /root
+[06/24/14 16:12:30] [INFO] Reading configuration file /root/.ngrok
+[06/24/14 16:12:30] [INFO] [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[06/24/14 16:12:30] [INFO] [view] [web] Serving web interface on 127.0.0.1:4040
+[06/24/14 16:12:30] [INFO] Checking for update
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] New connection to: 96.126.125.171:443
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"W_0D4KY5as11SvSupBMT","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Waiting to read message
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Reading message with length: 120
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.6","ClientId":"b3c4ea7ad22c091ef2513bb1c69ebc5d","Error":""}}
+[06/24/14 16:12:31] [INFO] [client] Authenticated with server, client id: b3c4ea7ad22c091ef2513bb1c69ebc5d
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"c5871eb2c62c0d84","Protocol":"http+https","Hostname":"","Subdomain":"testing546asdfasdf","HttpAuth":"","RemotePort":0}}
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Waiting to read message
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Reading message with length: 32
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:12:31] [DEBG] [ctl:4697a8e] Waiting to read message
+[06/24/14 16:12:32] [DEBG] [pxy:17777fcd] New connection to: 96.126.125.171:443
+[06/24/14 16:12:32] [DEBG] [pxy:17777fcd] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"b3c4ea7ad22c091ef2513bb1c69ebc5d"}}
+[06/24/14 16:12:32] [DEBG] [ctl:4697a8e] Reading message with length: 132
+[06/24/14 16:12:32] [DEBG] [ctl:4697a8e] Read message {"Type":"NewTunnel","Payload":{"ReqId":"c5871eb2c62c0d84","Url":"http://testing546asdfasdf.ngrok.com","Protocol":"http","Error":""}}
+[06/24/14 16:12:32] [INFO] [client] Tunnel established at http://testing546asdfasdf.ngrok.com
+[06/24/14 16:12:32] [DEBG] [ctl:4697a8e] Waiting to read message
+[06/24/14 16:12:32] [DEBG] [ctl:4697a8e] Reading message with length: 134
+[06/24/14 16:12:32] [DEBG] [ctl:4697a8e] Read message {"Type":"NewTunnel","Payload":{"ReqId":"c5871eb2c62c0d84","Url":"https://testing546asdfasdf.ngrok.com","Protocol":"https","Error":""}}
+[06/24/14 16:12:32] [INFO] [client] Tunnel established at https://testing546asdfasdf.ngrok.com
+[06/24/14 16:12:32] [DEBG] [ctl:4697a8e] Waiting to read message
+[06/24/14 16:12:32] [INFO] No update available
+[06/24/14 16:12:32] [DEBG] [pxy:17777fcd] Waiting to read message
+panic: runtime error: slice bounds out of range
+
+goroutine 11 [running]:
+runtime.panic(0x8306820, 0x871fc6a)
+	/Users/aes/src/gonative/go/src/pkg/runtime/panic.c:266 +0xac
+github.com/nsf/termbox-go.func·001()
+	/Users/aes/src/ngrok/src/github.com/nsf/termbox-go/api.go:94 +0x27f
+created by github.com/nsf/termbox-go.Init
+	/Users/aes/src/ngrok/src/github.com/nsf/termbox-go/api.go:105 +0x526
+
+goroutine 1 [select]:
+ngrok/client.(*Controller).Run(0x18a0aa80, 0x18a2f4c0)
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:194 +0x837
+ngrok/client.Main()
+	/Users/aes/src/ngrok/src/ngrok/client/main.go:51 +0x1cc
+main.main()
+	/Users/aes/src/ngrok/src/ngrok/main/ngrok/ngrok.go:8 +0x1e
+
+goroutine 3 [chan receive]:
+code.google.com/p/log4go.ConsoleLogWriter.run(0x18a4a0b0, 0xf77688f8, 0x18a00098)
+	/Users/aes/src/ngrok/src/code.google.com/p/log4go/termlog.go:27 +0x65
+created by code.google.com/p/log4go.NewConsoleLogWriter
+	/Users/aes/src/ngrok/src/code.google.com/p/log4go/termlog.go:19 +0x65
+
+goroutine 5 [syscall]:
+os/signal.loop()
+	/Users/aes/src/gonative/go/src/pkg/os/signal/signal_unix.go:21 +0x21
+created by os/signal.init·1
+	/Users/aes/src/gonative/go/src/pkg/os/signal/signal_unix.go:27 +0x34
+
+goroutine 6 [select]:
+ngrok/util.func·001()
+	/Users/aes/src/ngrok/src/ngrok/util/broadcast.go:20 +0x2ef
+created by ngrok/util.NewBroadcast
+	/Users/aes/src/ngrok/src/ngrok/util/broadcast.go:42 +0x12a
+
+goroutine 7 [select]:
+ngrok/util.func·001()
+	/Users/aes/src/ngrok/src/ngrok/util/broadcast.go:20 +0x2ef
+created by ngrok/util.NewBroadcast
+	/Users/aes/src/ngrok/src/ngrok/util/broadcast.go:42 +0x12a
+
+goroutine 8 [chan receive]:
+github.com/rcrowley/go-metrics.(*meterArbiter).tick(0x8724420)
+	/Users/aes/src/ngrok/src/github.com/rcrowley/go-metrics/meter.go:221 +0x4c
+created by github.com/rcrowley/go-metrics.NewMeter
+	/Users/aes/src/ngrok/src/github.com/rcrowley/go-metrics/meter.go:40 +0x166
+
+goroutine 9 [select]:
+ngrok/util.func·001()
+	/Users/aes/src/ngrok/src/ngrok/util/broadcast.go:20 +0x2ef
+created by ngrok/util.NewBroadcast
+	/Users/aes/src/ngrok/src/ngrok/util/broadcast.go:42 +0x12a
+
+goroutine 10 [IO wait]:
+net.runtime_pollWait(0xf7769ff0, 0x72, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/runtime/netpoll.goc:116 +0x61
+net.(*pollDesc).Wait(0x18a2f7b8, 0x72, 0xf77688a8, 0xb)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:81 +0x35
+net.(*pollDesc).WaitRead(0x18a2f7b8, 0xb, 0xf77688a8)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:86 +0x33
+net.(*netFD).accept(0x18a2f780, 0x83ddd14, 0x0, 0xf77688a8, 0xb)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_unix.go:382 +0x22a
+net.(*TCPListener).AcceptTCP(0x18a00f00, 0xc, 0x18a61820, 0x81d676e)
+	/Users/aes/src/gonative/go/src/pkg/net/tcpsock_posix.go:233 +0x44
+net.(*TCPListener).Accept(0x18a00f00, 0x0, 0xf7769020, 0x18a94720, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/net/tcpsock_posix.go:243 +0x2b
+net/http.(*Server).Serve(0x18acb2d0, 0xf7769058, 0x18a00f00, 0x0, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/net/http/server.go:1622 +0x78
+net/http.(*Server).ListenAndServe(0x18acb2d0, 0x18acb2d0, 0x18)
+	/Users/aes/src/gonative/go/src/pkg/net/http/server.go:1612 +0x86
+net/http.ListenAndServe(0x18a46430, 0xe, 0x0, 0x0, 0x8071bb2, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/http/server.go:1677 +0x62
+ngrok/client/views/web.func·009()
+	/Users/aes/src/ngrok/src/ngrok/client/views/web/view.go:69 +0x32
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 12 [select]:
+ngrok/util.func·001()
+	/Users/aes/src/ngrok/src/ngrok/util/broadcast.go:20 +0x2ef
+created by ngrok/util.NewBroadcast
+	/Users/aes/src/ngrok/src/ngrok/util/broadcast.go:42 +0x12a
+
+goroutine 13 [select]:
+ngrok/client/views/term.(*TermView).run(0x18acb4e0)
+	/Users/aes/src/ngrok/src/ngrok/client/views/term/view.go:131 +0x1eb
+ngrok/client/views/term.*TermView.(ngrok/client/views/term.run)·fm()
+	/Users/aes/src/ngrok/src/ngrok/client/views/term/view.go:40 +0x27
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 14 [select]:
+github.com/nsf/termbox-go.PollEvent(0x0, 0x0, 0x0, 0x18a73000, 0x0, ...)
+	/Users/aes/src/ngrok/src/github.com/nsf/termbox-go/api.go:242 +0x295
+ngrok/client/views/term.(*TermView).input(0x18acb4e0)
+	/Users/aes/src/ngrok/src/ngrok/client/views/term/view.go:162 +0x24
+ngrok/client/views/term.*TermView.(ngrok/client/views/term.input)·fm()
+	/Users/aes/src/ngrok/src/ngrok/client/views/term/view.go:41 +0x27
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 15 [chan receive]:
+ngrok/client/views/term.(*HttpView).Run(0x18a94840)
+	/Users/aes/src/ngrok/src/ngrok/client/views/term/http.go:58 +0x95
+ngrok/client/views/term.*HttpView.Run·fm()
+	/Users/aes/src/ngrok/src/ngrok/client/views/term/http.go:49 +0x27
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 16 [chan receive]:
+ngrok/client/views/web.(*WebHttpView).updateHttp(0x18acb5a0)
+	/Users/aes/src/ngrok/src/ngrok/client/views/web/http.go:149 +0x95
+ngrok/client/views/web.*WebHttpView.(ngrok/client/views/web.updateHttp)·fm()
+	/Users/aes/src/ngrok/src/ngrok/client/views/web/http.go:87 +0x27
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 17 [sleep]:
+time.Sleep(0x2453c000, 0x13a5)
+	/Users/aes/src/gonative/go/src/pkg/runtime/time.goc:31 +0x3c
+ngrok/client.autoUpdate(0xf7768f80, 0x18a3d3f0, 0xffdf0824, 0x14)
+	/Users/aes/src/ngrok/src/ngrok/client/update_release.go:82 +0x1c0
+ngrok/client.func·006()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:186 +0x3e
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 18 [IO wait]:
+net.runtime_pollWait(0xf7769f84, 0x72, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/runtime/netpoll.goc:116 +0x61
+net.(*pollDesc).Wait(0x18a2fb78, 0x72, 0xf77688a8, 0xb)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:81 +0x35
+net.(*pollDesc).WaitRead(0x18a2fb78, 0xb, 0xf77688a8)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:86 +0x33
+net.(*netFD).Read(0x18a2fb40, 0x18ae5000, 0x1000, 0x1000, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_unix.go:204 +0x234
+net.(*conn).Read(0x18a79598, 0x18ae5000, 0x1000, 0x1000, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/net.go:122 +0xab
+crypto/tls.(*block).readFromUntil(0x18ae0540, 0xf776a448, 0x18a79598, 0x5, 0x18a79598, ...)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:459 +0x99
+crypto/tls.(*Conn).readRecord(0x18aca180, 0x17, 0x0, 0x18c2fd14)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:539 +0xcb
+crypto/tls.(*Conn).Read(0x18aca180, 0x18becf80, 0x8, 0x8, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:897 +0xfc
+ngrok/conn.(*loggedConn).Read(0x18ae0260, 0x18becf80, 0x8, 0x8, 0x1, ...)
+	/Users/aes/src/ngrok/src/ngrok/conn/conn.go:1 +0x5d
+io.ReadAtLeast(0xf776a6c8, 0x18ae0260, 0x18becf80, 0x8, 0x8, ...)
+	/Users/aes/src/gonative/go/src/pkg/io/io.go:288 +0xb0
+io.ReadFull(0xf776a6c8, 0x18ae0260, 0x18becf80, 0x8, 0x8, ...)
+	/Users/aes/src/gonative/go/src/pkg/io/io.go:306 +0x5f
+encoding/binary.Read(0xf776a6c8, 0x18ae0260, 0xf7768be8, 0x18ae0260, 0x828e380, ...)
+	/Users/aes/src/gonative/go/src/pkg/encoding/binary/binary.go:146 +0xf0
+ngrok/msg.readMsgShared(0xf776a168, 0x18ae0260, 0x0, 0x0, 0x0, ...)
+	/Users/aes/src/ngrok/src/ngrok/msg/conn.go:14 +0x105
+ngrok/msg.ReadMsg(0xf776a168, 0x18ae0260, 0x0, 0x0, 0x0, ...)
+	/Users/aes/src/ngrok/src/ngrok/msg/conn.go:37 +0x53
+ngrok/client.(*ClientModel).control(0x18a3d3f0)
+	/Users/aes/src/ngrok/src/ngrok/client/model.go:289 +0x97e
+ngrok/client.(*ClientModel).Run(0x18a3d3f0)
+	/Users/aes/src/ngrok/src/ngrok/client/model.go:179 +0x4e
+ngrok/client/mvc.Model.Run·fm()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:187 +0x2c
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 20 [select]:
+ngrok/client.(*ClientModel).heartbeat(0x18a3d3f0, 0x18c38018, 0xf776a168, 0x18ae0260)
+	/Users/aes/src/ngrok/src/ngrok/client/model.go:410 +0x658
+ngrok/client.func·010()
+	/Users/aes/src/ngrok/src/ngrok/client/model.go:284 +0x3c
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 22 [IO wait]:
+net.runtime_pollWait(0xf7769f18, 0x72, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/runtime/netpoll.goc:116 +0x61
+net.(*pollDesc).Wait(0x18a2f638, 0x72, 0xf77688a8, 0xb)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:81 +0x35
+net.(*pollDesc).WaitRead(0x18a2f638, 0xb, 0xf77688a8)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:86 +0x33
+net.(*netFD).Read(0x18a2f600, 0x18b09400, 0x400, 0x400, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_unix.go:204 +0x234
+net.(*conn).Read(0x18af06d8, 0x18b09400, 0x400, 0x400, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/net.go:122 +0xab
+crypto/tls.(*block).readFromUntil(0x18b01620, 0xf776a448, 0x18af06d8, 0x5, 0x18af06d8, ...)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:459 +0x99
+crypto/tls.(*Conn).readRecord(0x18aca780, 0x17, 0x0, 0x80510c3)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:539 +0xcb
+crypto/tls.(*Conn).Read(0x18aca780, 0x18c8a000, 0x1000, 0x1000, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:897 +0xfc
+bufio.(*Reader).fill(0x18c61e40)
+	/Users/aes/src/gonative/go/src/pkg/bufio/bufio.go:91 +0xe1
+bufio.(*Reader).Peek(0x18c61e40, 0x1, 0x0, 0x0, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/bufio/bufio.go:119 +0xb3
+net/http.(*persistConn).readLoop(0x18a411e0)
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:687 +0xa5
+created by net/http.(*Transport).dialConn
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:528 +0x4c7
+
+goroutine 23 [select]:
+net/http.(*persistConn).writeLoop(0x18a411e0)
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:791 +0x207
+created by net/http.(*Transport).dialConn
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:529 +0x4dc
+
+goroutine 47 [IO wait]:
+net.runtime_pollWait(0xf7769eac, 0x72, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/runtime/netpoll.goc:116 +0x61
+net.(*pollDesc).Wait(0x18be8e78, 0x72, 0xf77688a8, 0xb)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:81 +0x35
+net.(*pollDesc).WaitRead(0x18be8e78, 0xb, 0xf77688a8)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:86 +0x33
+net.(*netFD).Read(0x18be8e40, 0x18cb9000, 0x1000, 0x1000, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_unix.go:204 +0x234
+net.(*conn).Read(0x18c92b78, 0x18cb9000, 0x1000, 0x1000, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/net.go:122 +0xab
+crypto/tls.(*block).readFromUntil(0x18c89a60, 0xf776a448, 0x18c92b78, 0x5, 0x18c92b78, ...)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:459 +0x99
+crypto/tls.(*Conn).readRecord(0x18bfdc00, 0x17, 0x0, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:539 +0xcb
+crypto/tls.(*Conn).Read(0x18bfdc00, 0x18c5b930, 0x8, 0x8, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:897 +0xfc
+ngrok/conn.(*loggedConn).Read(0x18c899e0, 0x18c5b930, 0x8, 0x8, 0x18bfdc01, ...)
+	/Users/aes/src/ngrok/src/ngrok/conn/conn.go:1 +0x5d
+io.ReadAtLeast(0xf776a6c8, 0x18c899e0, 0x18c5b930, 0x8, 0x8, ...)
+	/Users/aes/src/gonative/go/src/pkg/io/io.go:288 +0xb0
+io.ReadFull(0xf776a6c8, 0x18c899e0, 0x18c5b930, 0x8, 0x8, ...)
+	/Users/aes/src/gonative/go/src/pkg/io/io.go:306 +0x5f
+encoding/binary.Read(0xf776a6c8, 0x18c899e0, 0xf7768be8, 0x18c899e0, 0x828e380, ...)
+	/Users/aes/src/gonative/go/src/pkg/encoding/binary/binary.go:146 +0xf0
+ngrok/msg.readMsgShared(0xf776a168, 0x18c899e0, 0x0, 0x0, 0x0, ...)
+	/Users/aes/src/ngrok/src/ngrok/msg/conn.go:14 +0x105
+ngrok/msg.ReadMsgInto(0xf776a168, 0x18c899e0, 0x828f8c0, 0x18c91420, 0x0, ...)
+	/Users/aes/src/ngrok/src/ngrok/msg/conn.go:46 +0x43
+ngrok/client.(*ClientModel).proxy(0x18a3d3f0)
+	/Users/aes/src/ngrok/src/ngrok/client/model.go:352 +0x285
+ngrok/client.*ClientModel.(ngrok/client.proxy)·fm()
+	/Users/aes/src/ngrok/src/ngrok/client/model.go:295 +0x27
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 38 [IO wait]:
+net.runtime_pollWait(0xf7769d68, 0x72, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/runtime/netpoll.goc:116 +0x61
+net.(*pollDesc).Wait(0x18be82f8, 0x72, 0xf77688a8, 0xb)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:81 +0x35
+net.(*pollDesc).WaitRead(0x18be82f8, 0xb, 0xf77688a8)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_poll_runtime.go:86 +0x33
+net.(*netFD).Read(0x18be82c0, 0x18ce3400, 0x400, 0x400, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/fd_unix.go:204 +0x234
+net.(*conn).Read(0x18c2fbc0, 0x18ce3400, 0x400, 0x400, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/net/net.go:122 +0xab
+crypto/tls.(*block).readFromUntil(0x18bc21c0, 0xf776a448, 0x18c2fbc0, 0x5, 0x18c2fbc0, ...)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:459 +0x99
+crypto/tls.(*Conn).readRecord(0x18bfd600, 0x17, 0x0, 0x0)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:539 +0xcb
+crypto/tls.(*Conn).Read(0x18bfd600, 0x18becaf0, 0x8, 0x8, 0x0, ...)
+	/Users/aes/src/gonative/go/src/pkg/crypto/tls/conn.go:897 +0xfc
+ngrok/conn.(*loggedConn).Read(0x18bf1f80, 0x18becaf0, 0x8, 0x8, 0x18bfd601, ...)
+	/Users/aes/src/ngrok/src/ngrok/conn/conn.go:1 +0x5d
+io.ReadAtLeast(0xf776a6c8, 0x18bf1f80, 0x18becaf0, 0x8, 0x8, ...)
+	/Users/aes/src/gonative/go/src/pkg/io/io.go:288 +0xb0
+io.ReadFull(0xf776a6c8, 0x18bf1f80, 0x18becaf0, 0x8, 0x8, ...)
+	/Users/aes/src/gonative/go/src/pkg/io/io.go:306 +0x5f
+encoding/binary.Read(0xf776a6c8, 0x18bf1f80, 0xf7768be8, 0x18bf1f80, 0x828e380, ...)
+	/Users/aes/src/gonative/go/src/pkg/encoding/binary/binary.go:146 +0xf0
+ngrok/msg.readMsgShared(0xf776a168, 0x18bf1f80, 0x0, 0x0, 0x0, ...)
+	/Users/aes/src/ngrok/src/ngrok/msg/conn.go:14 +0x105
+ngrok/msg.ReadMsgInto(0xf776a168, 0x18bf1f80, 0x828f8c0, 0x18bdd420, 0x0, ...)
+	/Users/aes/src/ngrok/src/ngrok/msg/conn.go:46 +0x43
+ngrok/client.(*ClientModel).proxy(0x18a3d3f0)
+	/Users/aes/src/ngrok/src/ngrok/client/model.go:352 +0x285
+ngrok/client.*ClientModel.(ngrok/client.proxy)·fm()
+	/Users/aes/src/ngrok/src/ngrok/client/model.go:295 +0x27
+ngrok/client.func·003()
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:96 +0x51
+created by ngrok/client.(*Controller).Go
+	/Users/aes/src/ngrok/src/ngrok/client/controller.go:97 +0x7f
+
+goroutine 32 [chan receive]:
+net/http.(*persistConn).readLoop(0x18c5d1e0)
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:701 +0x24b
+created by net/http.(*Transport).dialConn
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:528 +0x4c7
+
+goroutine 33 [select]:
+net/http.(*persistConn).writeLoop(0x18c5d1e0)
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:791 +0x207
+created by net/http.(*Transport).dialConn
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:529 +0x4dc
+
+goroutine 41 [chan receive]:
+net/http.(*persistConn).readLoop(0x18c08280)
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:701 +0x24b
+created by net/http.(*Transport).dialConn
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:528 +0x4c7
+
+goroutine 42 [select]:
+net/http.(*persistConn).writeLoop(0x18c08280)
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:791 +0x207
+created by net/http.(*Transport).dialConn
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:529 +0x4dc
+
+goroutine 50 [chan receive]:
+net/http.(*persistConn).readLoop(0x18c5d8c0)
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:701 +0x24b
+created by net/http.(*Transport).dialConn
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:528 +0x4c7
+
+goroutine 51 [select]:
+net/http.(*persistConn).writeLoop(0x18c5d8c0)
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:791 +0x207
+created by net/http.(*Transport).dialConn
+	/Users/aes/src/gonative/go/src/pkg/net/http/transport.go:529 +0x4dc
+[06/24/14 16:17:10] [WARN] Failed to get user's home directory: user: Current not implemented on linux/386. Using $HOME: /root
+[06/24/14 16:17:10] [INFO] Reading configuration file /root/.ngrok
+[06/24/14 16:17:10] [INFO] [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[06/24/14 16:17:10] [INFO] [view] [web] Serving web interface on 127.0.0.1:4040
+[06/24/14 16:17:10] [INFO] Checking for update
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] New connection to: 96.126.125.171:443
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"W_0D4KY5as11SvSupBMT","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Waiting to read message
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Reading message with length: 120
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.6","ClientId":"e10b416bf4f64ea1436a2a9616f4e913","Error":""}}
+[06/24/14 16:17:11] [INFO] [client] Authenticated with server, client id: e10b416bf4f64ea1436a2a9616f4e913
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"8d54763aa52f67c4","Protocol":"http+https","Hostname":"","Subdomain":"testing546asdfasdf","HttpAuth":"","RemotePort":0}}
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Waiting to read message
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Reading message with length: 32
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:17:11] [DEBG] [ctl:145e45fb] Waiting to read message
+[06/24/14 16:17:12] [DEBG] [pxy:267aeb31] New connection to: 96.126.125.171:443
+[06/24/14 16:17:12] [DEBG] [pxy:267aeb31] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"e10b416bf4f64ea1436a2a9616f4e913"}}
+[06/24/14 16:17:12] [DEBG] [ctl:145e45fb] Reading message with length: 132
+[06/24/14 16:17:12] [DEBG] [ctl:145e45fb] Read message {"Type":"NewTunnel","Payload":{"ReqId":"8d54763aa52f67c4","Url":"http://testing546asdfasdf.ngrok.com","Protocol":"http","Error":""}}
+[06/24/14 16:17:12] [INFO] [client] Tunnel established at http://testing546asdfasdf.ngrok.com
+[06/24/14 16:17:12] [DEBG] [ctl:145e45fb] Waiting to read message
+[06/24/14 16:17:12] [DEBG] [ctl:145e45fb] Reading message with length: 134
+[06/24/14 16:17:12] [DEBG] [ctl:145e45fb] Read message {"Type":"NewTunnel","Payload":{"ReqId":"8d54763aa52f67c4","Url":"https://testing546asdfasdf.ngrok.com","Protocol":"https","Error":""}}
+[06/24/14 16:17:12] [INFO] [client] Tunnel established at https://testing546asdfasdf.ngrok.com
+[06/24/14 16:17:12] [DEBG] [ctl:145e45fb] Waiting to read message
+[06/24/14 16:17:12] [INFO] No update available
+[06/24/14 16:17:12] [DEBG] [pxy:267aeb31] Waiting to read message
+[06/24/14 16:17:31] [DEBG] [ctl:145e45fb] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:17:32] [DEBG] [ctl:145e45fb] Reading message with length: 28
+[06/24/14 16:17:32] [DEBG] [ctl:145e45fb] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:17:32] [DEBG] [ctl:145e45fb] Waiting to read message
+[06/24/14 16:19:19] [WARN] Failed to get user's home directory: user: Current not implemented on linux/386. Using $HOME: /root
+[06/24/14 16:19:19] [INFO] Reading configuration file /root/.ngrok
+[06/24/14 16:19:19] [INFO] [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[06/24/14 16:19:19] [INFO] [view] [web] Serving web interface on 127.0.0.1:4040
+[06/24/14 16:19:19] [INFO] Checking for update
+[06/24/14 16:19:19] [DEBG] [ctl:288722d3] New connection to: 96.126.125.171:443
+[06/24/14 16:19:19] [DEBG] [ctl:288722d3] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"W_0D4KY5as11SvSupBMT","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Reading message with length: 120
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.6","ClientId":"cc841f9a76953f629cc068d332d198da","Error":""}}
+[06/24/14 16:19:20] [INFO] [client] Authenticated with server, client id: cc841f9a76953f629cc068d332d198da
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"fff06d27855b8369","Protocol":"http+https","Hostname":"","Subdomain":"TWN-100-805499","HttpAuth":"","RemotePort":0}}
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:19:20] [DEBG] [pxy:abea8ab] New connection to: 96.126.125.171:443
+[06/24/14 16:19:20] [DEBG] [pxy:abea8ab] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Reading message with length: 128
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Read message {"Type":"NewTunnel","Payload":{"ReqId":"fff06d27855b8369","Url":"http://twn-100-805499.ngrok.com","Protocol":"http","Error":""}}
+[06/24/14 16:19:20] [INFO] [client] Tunnel established at http://twn-100-805499.ngrok.com
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Reading message with length: 130
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Read message {"Type":"NewTunnel","Payload":{"ReqId":"fff06d27855b8369","Url":"https://twn-100-805499.ngrok.com","Protocol":"https","Error":""}}
+[06/24/14 16:19:20] [INFO] [client] Tunnel established at https://twn-100-805499.ngrok.com
+[06/24/14 16:19:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:19:20] [INFO] No update available
+[06/24/14 16:19:20] [DEBG] [pxy:abea8ab] Waiting to read message
+[06/24/14 16:19:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:19:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:19:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:19:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:20:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:20:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:20:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:20:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:20:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:20:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:20:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:20:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:20:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:20:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:20:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:20:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:21:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:21:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:21:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:21:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:21:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:21:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:21:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:21:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:21:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:21:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:21:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:21:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:22:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:22:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:22:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:22:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:22:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:22:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:22:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:22:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:22:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:22:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:22:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:22:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:23:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:23:01] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:23:01] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:23:01] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:23:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:23:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:23:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:23:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:23:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:23:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:23:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:23:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:24:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:24:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:24:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:24:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:24:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:24:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:24:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:24:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:24:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:24:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:24:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:24:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:25:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:25:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:25:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:25:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:25:16] [EROR] [pxy:abea8ab] Server failed to write StartProxy: EOF
+[06/24/14 16:25:16] [DEBG] [pxy:abea8ab] Closing
+[06/24/14 16:25:16] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:25:16] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:25:16] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:25:16] [DEBG] [pxy:4d43a1c5] New connection to: 96.126.125.171:443
+[06/24/14 16:25:16] [DEBG] [pxy:4d43a1c5] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:25:16] [DEBG] [pxy:4d43a1c5] Waiting to read message
+[06/24/14 16:25:17] [DEBG] [pxy:4d43a1c5] Reading message with length: 103
+[06/24/14 16:25:17] [DEBG] [pxy:4d43a1c5] Read message {"Type":"StartProxy","Payload":{"Url":"http://twn-100-805499.ngrok.com","ClientAddr":"140.109.22.197"}}
+[06/24/14 16:25:17] [DEBG] [prv:2eaac342] New connection to: 127.0.0.1:80
+[06/24/14 16:25:17] [INFO] [prv:2eaac342] Joined with connection pxy:4d43a1c5
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:25:17] [DEBG] [prv:2eaac342] Copied 185 bytes to pxy:4d43a1c5
+[06/24/14 16:25:17] [DEBG] [prv:2eaac342] Closing
+[06/24/14 16:25:17] [DEBG] [pxy:4d43a1c5] Closing
+[06/24/14 16:25:17] [WARN] [pxy:4d43a1c5] Copied 418 bytes to prv:2eaac342 before failing with error read tcp 96.126.125.171:443: use of closed network connection
+[06/24/14 16:25:17] [DEBG] [pxy:5ec06ee1] New connection to: 96.126.125.171:443
+[06/24/14 16:25:17] [DEBG] [pxy:5ec06ee1] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:25:17] [DEBG] [pxy:5ec06ee1] Waiting to read message
+[06/24/14 16:25:17] [DEBG] [pxy:5f838a1] New connection to: 96.126.125.171:443
+[06/24/14 16:25:17] [DEBG] [pxy:5f838a1] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:25:17] [DEBG] [pxy:5ec06ee1] Reading message with length: 103
+[06/24/14 16:25:17] [DEBG] [pxy:5ec06ee1] Read message {"Type":"StartProxy","Payload":{"Url":"http://twn-100-805499.ngrok.com","ClientAddr":"140.109.22.197"}}
+[06/24/14 16:25:17] [DEBG] [prv:6f9f2d5b] New connection to: 127.0.0.1:80
+[06/24/14 16:25:17] [INFO] [prv:6f9f2d5b] Joined with connection pxy:5ec06ee1
+[06/24/14 16:25:17] [DEBG] [prv:6f9f2d5b] Copied 392 bytes to pxy:5ec06ee1
+[06/24/14 16:25:17] [DEBG] [prv:6f9f2d5b] Closing
+[06/24/14 16:25:17] [DEBG] [pxy:5ec06ee1] Closing
+[06/24/14 16:25:17] [WARN] [pxy:5ec06ee1] Copied 358 bytes to prv:6f9f2d5b before failing with error read tcp 96.126.125.171:443: use of closed network connection
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:25:17] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:25:18] [DEBG] [pxy:71db2f2e] New connection to: 96.126.125.171:443
+[06/24/14 16:25:18] [DEBG] [pxy:71db2f2e] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:25:18] [DEBG] [pxy:5f838a1] Waiting to read message
+[06/24/14 16:25:18] [DEBG] [pxy:71db2f2e] Waiting to read message
+[06/24/14 16:25:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:25:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:25:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:25:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:25:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:25:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:25:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:25:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:26:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:26:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:26:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:26:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:26:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:26:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:26:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:26:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:26:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:26:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:26:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:26:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:27:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:27:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:27:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:27:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:27:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:27:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:27:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:27:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:27:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:27:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:27:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:27:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:28:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:28:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:28:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:28:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:28:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:28:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:28:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:28:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:28:26] [WARN] Failed to get user's home directory: user: Current not implemented on linux/386. Using $HOME: /root
+[06/24/14 16:28:26] [INFO] Reading configuration file /root/.ngrok
+[06/24/14 16:28:26] [INFO] [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[06/24/14 16:28:26] [INFO] [view] [web] Serving web interface on 127.0.0.1:4040
+[06/24/14 16:28:26] [INFO] Checking for update
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] New connection to: 96.126.125.171:443
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"W_0D4KY5as11SvSupBMT","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Waiting to read message
+[06/24/14 16:28:27] [EROR] [pxy:71db2f2e] Server failed to write StartProxy: EOF
+[06/24/14 16:28:27] [DEBG] [pxy:71db2f2e] Closing
+[06/24/14 16:28:27] [EROR] [pxy:5f838a1] Server failed to write StartProxy: EOF
+[06/24/14 16:28:27] [DEBG] [pxy:5f838a1] Closing
+[06/24/14 16:28:27] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:28:27] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:28:27] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Reading message with length: 120
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.6","ClientId":"a0b939f77f8d77073e39b214f41757fc","Error":""}}
+[06/24/14 16:28:27] [INFO] [client] Authenticated with server, client id: a0b939f77f8d77073e39b214f41757fc
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"f50703d90c93dcce","Protocol":"http+https","Hostname":"","Subdomain":"TWN-100-805499","HttpAuth":"","RemotePort":0}}
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Waiting to read message
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Reading message with length: 32
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:28:27] [DEBG] [ctl:12bebaf0] Waiting to read message
+[06/24/14 16:28:28] [DEBG] [pxy:29887a0a] New connection to: 96.126.125.171:443
+[06/24/14 16:28:28] [DEBG] [pxy:29887a0a] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:28:28] [DEBG] [pxy:500ba391] New connection to: 96.126.125.171:443
+[06/24/14 16:28:28] [DEBG] [pxy:500ba391] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"a0b939f77f8d77073e39b214f41757fc"}}
+[06/24/14 16:28:28] [DEBG] [ctl:12bebaf0] Reading message with length: 142
+[06/24/14 16:28:28] [DEBG] [ctl:12bebaf0] Read message {"Type":"NewTunnel","Payload":{"ReqId":"","Url":"","Protocol":"","Error":"The tunnel http://twn-100-805499.ngrok.com is already registered."}}
+[06/24/14 16:28:28] [EROR] [client] Server failed to allocate tunnel: The tunnel http://twn-100-805499.ngrok.com is already registered.
+[06/24/14 16:28:28] [DEBG] [ctl:12bebaf0] Waiting to read message
+[06/24/14 16:28:28] [DEBG] [ctl:12bebaf0] Closing
+[06/24/14 16:28:28] [EROR] control recovering from failure EOF
+[06/24/14 16:28:28] [INFO] Waiting 1 seconds before reconnecting
+[06/24/14 16:28:28] [INFO] [controller] Shutting down
+Server failed to allocate tunnel: The tunnel http://twn-100-805499.ngrok.com is already registered.
+[06/24/14 16:28:28] [DEBG] [pxy:29887a0a] Waiting to read message
+[06/24/14 16:28:28] [DEBG] [pxy:29887a0a] Reading message with length: 102
+[06/24/14 16:28:28] [DEBG] [pxy:29887a0a] Read message {"Type":"StartProxy","Payload":{"Url":"http://twn-100-805499.ngrok.com","ClientAddr":"140.109.17.57"}}
+[06/24/14 16:28:28] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:28:28] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:28:28] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:28:28] [DEBG] [prv:52674ea] New connection to: 127.0.0.1:80
+[06/24/14 16:28:28] [INFO] [prv:52674ea] Joined with connection pxy:29887a0a
+[06/24/14 16:28:28] [DEBG] [prv:52674ea] Copied 202 bytes to pxy:29887a0a
+[06/24/14 16:28:28] [DEBG] [prv:52674ea] Closing
+[06/24/14 16:28:28] [DEBG] [pxy:29887a0a] Closing
+[06/24/14 16:28:28] [WARN] [pxy:29887a0a] Copied 387 bytes to prv:52674ea before failing with error read tcp 96.126.125.171:443: use of closed network connection
+[06/24/14 16:28:28] [DEBG] [pxy:7fa36b99] New connection to: 96.126.125.171:443
+[06/24/14 16:28:28] [DEBG] [pxy:7fa36b99] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:28:29] [DEBG] [pxy:7fa36b99] Waiting to read message
+[06/24/14 16:28:29] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:28:29] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:28:29] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:28:29] [DEBG] [pxy:7fa36b99] Reading message with length: 102
+[06/24/14 16:28:29] [DEBG] [pxy:7fa36b99] Read message {"Type":"StartProxy","Payload":{"Url":"http://twn-100-805499.ngrok.com","ClientAddr":"140.109.17.57"}}
+[06/24/14 16:28:29] [DEBG] [prv:bb03fbc] New connection to: 127.0.0.1:80
+[06/24/14 16:28:29] [INFO] [prv:bb03fbc] Joined with connection pxy:7fa36b99
+[06/24/14 16:28:29] [DEBG] [pxy:4a36e6fc] New connection to: 96.126.125.171:443
+[06/24/14 16:28:29] [DEBG] [pxy:4a36e6fc] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:28:29] [DEBG] [prv:bb03fbc] Copied 180 bytes to pxy:7fa36b99
+[06/24/14 16:28:29] [DEBG] [prv:bb03fbc] Closing
+[06/24/14 16:28:29] [DEBG] [pxy:7fa36b99] Closing
+[06/24/14 16:28:29] [WARN] [pxy:7fa36b99] Copied 14208 bytes to prv:bb03fbc before failing with error read tcp 96.126.125.171:443: use of closed network connection
+[06/24/14 16:28:30] [DEBG] [pxy:4a36e6fc] Waiting to read message
+[06/24/14 16:28:31] [DEBG] [pxy:4a36e6fc] Reading message with length: 102
+[06/24/14 16:28:31] [DEBG] [pxy:4a36e6fc] Read message {"Type":"StartProxy","Payload":{"Url":"http://twn-100-805499.ngrok.com","ClientAddr":"140.109.17.57"}}
+[06/24/14 16:28:31] [DEBG] [prv:59684a61] New connection to: 127.0.0.1:80
+[06/24/14 16:28:31] [INFO] [prv:59684a61] Joined with connection pxy:4a36e6fc
+[06/24/14 16:28:31] [DEBG] [ctl:288722d3] Reading message with length: 32
+[06/24/14 16:28:31] [DEBG] [ctl:288722d3] Read message {"Type":"ReqProxy","Payload":{}}
+[06/24/14 16:28:31] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:28:31] [DEBG] [pxy:6577087d] New connection to: 96.126.125.171:443
+[06/24/14 16:28:31] [DEBG] [pxy:6577087d] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"cc841f9a76953f629cc068d332d198da"}}
+[06/24/14 16:28:32] [DEBG] [prv:59684a61] Copied 180 bytes to pxy:4a36e6fc
+[06/24/14 16:28:32] [DEBG] [prv:59684a61] Closing
+[06/24/14 16:28:32] [DEBG] [pxy:4a36e6fc] Closing
+[06/24/14 16:28:32] [WARN] [pxy:4a36e6fc] Copied 121924 bytes to prv:59684a61 before failing with error read tcp 96.126.125.171:443: use of closed network connection
+[06/24/14 16:28:32] [DEBG] [pxy:6577087d] Waiting to read message
+[06/24/14 16:28:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:28:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:28:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:28:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:29:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:29:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:29:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:29:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:29:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:29:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:29:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:29:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:29:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:29:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:29:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:29:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:30:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:30:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:30:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:30:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:30:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:30:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:30:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:30:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:30:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:30:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:30:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:30:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:31:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:31:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:31:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:31:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:31:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:31:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:31:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:31:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:31:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:31:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:31:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:31:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:32:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:32:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:32:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:32:00] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:32:20] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:32:20] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:32:20] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:32:20] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:32:40] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:32:40] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:32:40] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:32:40] [DEBG] [ctl:288722d3] Waiting to read message
+[06/24/14 16:33:00] [DEBG] [ctl:288722d3] Writing message: {"Type":"Ping","Payload":{}}
+[06/24/14 16:33:00] [DEBG] [ctl:288722d3] Reading message with length: 28
+[06/24/14 16:33:00] [DEBG] [ctl:288722d3] Read message {"Type":"Pong","Payload":{}}
+[06/24/14 16:33:00] [DEBG] [ctl:288722d3] Waiting to read message
