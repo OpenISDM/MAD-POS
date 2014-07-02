@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<script type="text/javascript">
+var xml;
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "/cache/Cache.rdf",
+        dataType: "xml",
+        success: xmlParser
+    });
+});
+//loading XML file and parsing to .main div.
+
+function xmlParser(data) {
+    xml = data;
+
+    $('#load').fadeOut();
+
+    $(xml).find("rdf\\:Description, Description").each(function() {
+        var rdf_about = $(this).attr("rdf:about");
+        var hasName = $(this).find("ns1\\:hasName, hasName").text();
+        var moreInfo = $(this).find("ns1\\:moreInfo, moreInfo").text();
+        var hasType = $(this).find("ns1\\:hasType, hasType").text();
+        var hasAddress = $(this).find("ns1\\:hasAddress, hasAddress").text();
+        var hasDistrict = $(this).find("ns1\\:hasDistrict, hasDistrict").text();
+        var longitude = $(this).find("ns1\\:longitude, longitude").text();
+        var hasTelephone = $(this).find("ns1\\:hasTelephone, hasTelephone").text();
+        var hasCategory = $(this).find("ns1\\:hasCategory, hasCategory").text();
+        var latitude = $(this).find("ns1\\:latitude, latitude").text();
+
+
+        $("#list").append('<li><h3 id="hasName">' + hasName + '</h3><ul><li>hasType: ' + hasType + '</li><li>moreInfo: ' + moreInfo + '</li><li>hasAddress: ' + hasAddress + '</li><li>hasDistrict: ' + hasDistrict + '</li><li>longitude: ' + longitude + '</li><li>latitude: ' + latitude + '</li><li>hasTelephone: ' + hasTelephone + '</li><li>hasCategory: ' + hasCategory + '</li></ul></li>');
+
+    });
+    $('#list').listview('refresh');
+}
+</script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="a">
+            <h1>List of Facility</h1>
+        </div>
+        <!-- /header -->
+        <div data-role="content">
+            <div class="content-primary">
+                <ul id="list" data-role="listview" data-theme="a" data-filter="true">
+                    <li id="load">Loading Data...</li>
+                </ul>
+                <ul id="results" data-role="listview" data-theme="a">
+                </ul>
+            </div>
+            <!-- /contentprimary -->
+        </div>
+        <!-- /content -->
+        <div data-role="footer" data-theme="a">
+            <div data-role="navbar">
+                <p align='center'>::: MAD Mobile Client :::</p>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page -->
+</body>
+
+</html>
