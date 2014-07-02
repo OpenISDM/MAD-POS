@@ -51,9 +51,8 @@ app = Flask(__name__)
 
 topic_url = ''
 
-app.config['UPLOAD_FOLDER'] = './Cache/'
+app.config['UPLOAD_FOLDER'] = os.path.abspath('./mad_pos/Cache')
 
-resourcePath = os.path.abspath('./pythoncodes/mad_pos/Cache')
 
 # These are the extension that we are accepting to be uploaded
 app.config['ALLOWED_EXTENSIONS'] = set(
@@ -72,9 +71,7 @@ def web_local_app():
 
 @app.route('/cache/<filename>')
 def uploaded_file(filename):
-    print >> sys.stderr, app.config['UPLOAD_FOLDER'] + filename
-    print >> sys.stderr, resourcePath + filename
-    return send_from_directory(resourcePath, filename)
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
 @app.route('/callback', methods=['POST'])
@@ -82,7 +79,10 @@ def callbackPost():
     f = request.files['file']
     if f and allowed_file(f.filename):
         extension = f.filename.rsplit('.', 1)[1]
-        f.save(resourcePath + '/Cache.' + extension)
+        save_path = os.path.join(
+            app.config['UPLOAD_FOLDER'], 'Cache.' + extension)
+        print >> sys.stderr, save_path
+        f.save(save_path)
         return 'PUSH　Success'
     return 'PUSH file is not correct'
 

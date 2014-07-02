@@ -99,7 +99,7 @@ def get_opt(argv):
                 print 'subscribe.py  -P <pos_id> -U <is_url> -Y <pos_type>'
                 sys.exit()
             elif opt in ("-P", "--posid"):
-                pos_id = arg
+               pos_id = arg
             elif opt in ("-U", "--isurl"):
                 is_url = arg
             elif opt in ("-Y", "--postype"):
