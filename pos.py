@@ -41,7 +41,7 @@
 """
 
 from flask import Flask, request, after_this_request, make_response, \
-    render_template, url_for, redirect, abort, send_file
+    render_template, url_for, redirect, abort, send_from_directory
 import requests
 import json
 import sys
@@ -51,7 +51,9 @@ app = Flask(__name__)
 
 topic_url = ''
 
-app.config['UPLOAD_FOLDER'] = 'Cache/'
+app.config['UPLOAD_FOLDER'] = './Cache/'
+
+resourcePath = os.path.abspath('./pythoncodes/mad_pos/Cache')
 
 # These are the extension that we are accepting to be uploaded
 app.config['ALLOWED_EXTENSIONS'] = set(
@@ -64,39 +66,15 @@ def allowed_file(filename):
 
 
 @app.route('/', methods=['GET'])
-<<<<<<< HEAD:sub.py
-def root():
-    print >> sys.stderr, "Start Server.....#1"
-    return 'Server Check OK!!!!'
-
-
-@app.route('/topic/<topic_file>', methods=['GET'])
-def getTopic(topic_file):
-#    print >> sys.stderr, "getTopic with " + topic_file
-
-    if topic_file == 'rdf':
-        filePath = resourcePath + '/Cache.rdf'
-        if os.path.exists(filePath):
-            return send_file(filePath, mimetype='application/rdf+xml', as_attachment=True, attachment_filename='dataFiles.rdf')
-    elif topic_file == 'json':
-        filePath = resourcePath + '/Cache.json'
-        if os.path.exists(filePath):
-            return send_file(filePath, mimetype='application/json', as_attachment=True, attachment_filename='dataFiles.json')
-    elif topic_file == 'img':
-        filePath = resourcePath + '/Cache.png'
-        if os.path.exists(filePath):
-            return send_file(filePath, mimetype='image/png', as_attachment=False, attachment_filename='imgMaps.png')
-    else:
-        return 'empty'
-=======
 def web_local_app():
     return render_template('index.html')
 
 
 @app.route('/cache/<filename>')
 def uploaded_file(filename):
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
->>>>>>> a034e30e8fb2209afbc25ef21f1d7e7c0b08ba57:pos.py
+    print >> sys.stderr, app.config['UPLOAD_FOLDER'] + filename
+    print >> sys.stderr, resourcePath + filename
+    return send_from_directory(resourcePath, filename)
 
 
 @app.route('/callback', methods=['POST'])
