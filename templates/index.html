@@ -22,26 +22,20 @@ function xmlParser(data) {
 
     $('#load').fadeOut();
 
-    // $(xml).find("Employee").each(function() {
-    //     name = $(this).attr("name");
-    //     var email = $(this).find("email").text();
-    //     var jobtitle = $(this).find("jobtitle").text();
-    //     var address = $(this).find("address").text();
-    //     var workphone = $(this).find("workphone").text();
-    //     var homephone = $(this).find("homephone").text();
-    //     var cellphone = $(this).find("cellphone").text();
-    //     var fax = $(this).find("fax").text();
-
-    //     $("#list").append('<li><h3 id="name">' + name + '</h3><ul><li>Email: ' + email + '</li><li>Job Title: ' + jobtitle + '</li><li>Address: ' + address + '</li><li>Work Phone: ' + workphone + '</li><li>Home Phone: ' + homephone + '</li><li>Cell Phone: ' + cellphone + '</li><li>Fax: ' + fax + '</li></ul></li>');
-
     $(xml).find("rdf\\:Description, Description").each(function() {
-        rdf_about = $(this).attr("rdf:about");
+        var rdf_about = $(this).attr("rdf:about");
         var hasName = $(this).find("ns1\\:hasName, hasName").text();
+        var moreInfo = $(this).find("ns1\\:moreInfo, moreInfo").text();
+        var hasType = $(this).find("ns1\\:hasType, hasType").text();
+        var hasAddress = $(this).find("ns1\\:hasAddress, hasAddress").text();
+        var hasDistrict = $(this).find("ns1\\:hasDistrict, hasDistrict").text();
+        var longitude = $(this).find("ns1\\:longitude, longitude").text();
+        var hasTelephone = $(this).find("ns1\\:hasTelephone, hasTelephone").text();
+        var hasCategory = $(this).find("ns1\\:hasCategory, hasCategory").text();
+        var latitude = $(this).find("ns1\\:latitude, latitude").text();
 
 
-        $("#list").append('<li><h3 id="rdf_about">' + rdf_about + '</h3><ul><li>hasName: ' + hasName + '</li></ul></li>');
-
-
+        $("#list").append('<li><h3 id="hasName">' + hasName + '</h3><ul><li>hasType: ' + hasType + '</li><li>moreInfo: ' + moreInfo + '</li><li>hasAddress: ' + hasAddress + '</li><li>hasDistrict: ' + hasDistrict + '</li><li>longitude: ' + longitude + '</li><li>latitude: ' + latitude + '</li><li>hasTelephone: ' + hasTelephone + '</li><li>hasCategory: ' + hasCategory + '</li></ul></li>');
 
     });
     $('#list').listview('refresh');
@@ -52,7 +46,7 @@ function xmlParser(data) {
 <body>
     <div data-role="page">
         <div data-role="header" data-theme="a">
-            <h1>Employees</h1>
+            <h1>List of Facility</h1>
         </div>
         <!-- /header -->
         <div data-role="content">
@@ -68,7 +62,7 @@ function xmlParser(data) {
         <!-- /content -->
         <div data-role="footer" data-theme="a">
             <div data-role="navbar">
-                <p align='center'>::: Footer :::</p>
+                <p align='center'>::: MAD Mobile Client :::</p>
             </div>
             <!-- /navbar -->
         </div>
