@@ -70,7 +70,7 @@ def root():
 
 @app.route('/topic/<topic_file>', methods=['GET'])
 def getTopic(topic_file):
-    print >> sys.stderr, "getTopic with " + topic_file
+#    print >> sys.stderr, "getTopic with " + topic_file
 
     if topic_file == 'rdf':
         filePath = resourcePath + '/Cache.rdf'
