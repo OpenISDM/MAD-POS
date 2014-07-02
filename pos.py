@@ -50,7 +50,8 @@ import os
 app = Flask(__name__)
 
 topic_url = ''
-resourcePath = os.path.abspath('./pythoncodes/mad_pos/Resource')
+
+app.config['UPLOAD_FOLDER'] = 'Cache/'
 
 # These are the extension that we are accepting to be uploaded
 app.config['ALLOWED_EXTENSIONS'] = set(
@@ -63,29 +64,13 @@ def allowed_file(filename):
 
 
 @app.route('/', methods=['GET'])
-def root():
-    print >> sys.stderr, "Start Server.....#1"
-    return 'Server Check OK!!!!'
+def web_local_app():
+    return render_template('index.html')
 
 
-@app.route('/topic/<topic_file>', methods=['GET'])
-def getTopic(topic_file):
-    print >> sys.stderr, "getTopic with " + topic_file
-
-    if topic_file == 'rdf':
-        filePath = resourcePath + '/Cache.rdf'
-        if os.path.exists(filePath):
-            return send_file(filePath, mimetype='application/rdf+xml', as_attachment=True, attachment_filename='dataFiles.rdf')
-    elif topic_file == 'json':
-        filePath = resourcePath + '/Cache.json'
-        if os.path.exists(filePath):
-            return send_file(filePath, mimetype='application/json', as_attachment=True, attachment_filename='dataFiles.json')
-    elif topic_file == 'img':
-        filePath = resourcePath + '/Cache.png'
-        if os.path.exists(filePath):
-            return send_file(filePath, mimetype='image/png', as_attachment=False, attachment_filename='imgMaps.png')
-    else:
-        return 'empty'
+@app.route('/cache/<filename>')
+def uploaded_file(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
 @app.route('/callback', methods=['POST'])
@@ -130,5 +115,5 @@ def callbackGet():
             resp = make_response(render_template('Unknown.html'), 406)
             return resp
     else:
-        resp = make_response(render_template('Unknown.html'), 405)
+        resp = make_response(render_template('Unknown.html'), 406)
         return resp
