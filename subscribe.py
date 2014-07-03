@@ -62,7 +62,7 @@ console.setFormatter(formatter)
 # Setup Logger
 logger.addHandler(console)
 logger.setLevel(logging.INFO)
-
+port = "80"
 
 def set_up_ngrok(domain):
     '''
@@ -72,13 +72,19 @@ def set_up_ngrok(domain):
     '''
     import platform
     if platform.system() == 'Windows':
+        global port 
+        port = "8080"
         startupinfo = subprocess.STARTUPINFO()
         startupinfo.dwFlags = subprocess.STARTF_USESTDHANDLES | subprocess.STARTF_USESHOWWINDOW
+        logger.info('Domain is : ' + domain)
         pid = subprocess.Popen(
-            [r"sshtunnel\ngrok.exe", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)], startupinfo=startupinfo).pid
+            [r"sshtunnel\ngrok.exe", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, port], startupinfo=startupinfo).pid
     elif platform.system() == 'Linux':
+        global port
+        port = "80"
         pid = subprocess.Popen(
-            ["nohup", "./sshtunnel/ngrok", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)]).pid
+            ["nohup", "./sshtunnel/ngrok", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, port]).pid
+    logger.info('Run on Port : ' + port)
     logger.info('Run in background process : ' + str(pid))
 
 
@@ -139,8 +145,11 @@ def subscribe(pos_id, is_url, pos_type):
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36',
         'Content-Type': 'text/plain; charset=utf-8',
         'Accept-Language': 'en-US,en;q=0.8'}
+    
     r = requests.get(is_url, params=payload)
-
+    #logger.info('IS URL : ' + is_url)
+    #logger.info('Payload : ' + payload)
+    
     logger.info('Hub URL : ' + r.links['hub']['url'])
     logger.info('Topic URL : ' + r.links['self']['url'])
 
@@ -150,7 +159,7 @@ def subscribe(pos_id, is_url, pos_type):
     # Storing topic URL
     payload = {
         'url': topic_url}
-    r = requests.get('http://127.0.0.1/settopicurl', params=payload)
+    r = requests.get('http://127.0.0.1:'+ port +'/settopicurl', params=payload)
     logger.info('Results : ' + r.text)
 
     # Starting subscriber
@@ -158,7 +167,7 @@ def subscribe(pos_id, is_url, pos_type):
     payload = {
         'hub.mode': 'subscribe',
         'hub.topic': topic_url,
-        'hub.callback': 'http://' + pos_id + '.ngrok.com/callback'}
+        'hub.callback': "http://" + pos_id + ".ngrok.com/callback"}
 
     r = requests.post(hub_url, data=payload, headers=headers)
     logger.info(

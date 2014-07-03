@@ -3,388 +3,324 @@
    xmlns:ns1="http://openisdm.com/MAD/property/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC677239">
-    <ns1:longitude>121.5627419</ns1:longitude>
-    <ns1:hasName>健康國小</ns1:hasName>
-    <ns1:latitude>25.0567043</ns1:latitude>
-    <ns1:hasTelephone>2528-2814#136</ns1:hasTelephone>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC711463">
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasName>西村區民活動中心</ns1:hasName>
+    <ns1:latitude>25.03501</ns1:latitude>
+    <ns1:longitude>121.559205</ns1:longitude>
     <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>松山區延壽街168號</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasType>學校</ns1:hasType>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC341258">
-    <ns1:longitude>121.5467071</ns1:longitude>
-    <ns1:hasAddress>松山區南京東路3段300號</ns1:hasAddress>
-    <ns1:latitude>25.0515415</ns1:latitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasType>優先安置學校</ns1:hasType>
-    <ns1:hasName>敦化國中</ns1:hasName>
-    <ns1:hasTelephone>87717890*50</ns1:hasTelephone>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC508432">
-    <ns1:hasAddress>八德路3段12巷52弄2之1號</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-    <ns1:latitude>25.046309</ns1:latitude>
-    <ns1:hasName>敦化區民活動中心</ns1:hasName>
+    <ns1:hasTelephone>50</ns1:hasTelephone>
+    <ns1:hasAddress>基隆路一段364巷22號</ns1:hasAddress>
     <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:longitude>121.55038</ns1:longitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
   </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC490362">
-    <ns1:hasAddress>光復北路230巷21號地下1樓</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:latitude>25.0495134</ns1:latitude>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-    <ns1:hasName>龍田區民活動中心</ns1:hasName>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:longitude>121.5579996</ns1:longitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC502951">
-    <ns1:hasName>松山霞海城隍廟</ns1:hasName>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:latitude>25.0497488</ns1:latitude>
-    <ns1:hasAddress>八德路4段439號</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>2765-2046</ns1:hasTelephone>
-    <ns1:longitude>121.5702454</ns1:longitude>
-    <ns1:hasType>寺廟</ns1:hasType>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC507259">
-    <ns1:hasType>學校</ns1:hasType>
-    <ns1:hasTelephone>27672907#633</ns1:hasTelephone>
-    <ns1:longitude>121.567605</ns1:longitude>
-    <ns1:latitude>25.049035</ns1:latitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasName>松山國小</ns1:hasName>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>松山區八德路4段746號</ns1:hasAddress>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC992739">
-    <ns1:hasAddress>松山區敦化北路199巷18號</ns1:hasAddress>
-    <ns1:hasType>優先安置學校</ns1:hasType>
-    <ns1:hasName>民生國小</ns1:hasName>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:longitude>121.5521224</ns1:longitude>
-    <ns1:hasTelephone>27122452#830</ns1:hasTelephone>
-    <ns1:latitude>25.0565324</ns1:latitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC587148">
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasName>鵬程區民活動中心</ns1:hasName>
-    <ns1:hasAddress>健康路399號3樓</ns1:hasAddress>
-    <ns1:latitude>25.054639</ns1:latitude>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-    <ns1:longitude>121.568808</ns1:longitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC725796">
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:latitude>25.0521927</ns1:latitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>臺北市松山區三民路5號</ns1:hasAddress>
-    <ns1:hasTelephone>27609221#203</ns1:hasTelephone>
-    <ns1:hasName>西松國小</ns1:hasName>
-    <ns1:hasType>學校</ns1:hasType>
-    <ns1:longitude>121.5636201</ns1:longitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC973653">
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasName>財團法人台北市松山慈祐宮</ns1:hasName>
-    <ns1:hasAddress>八德路4段761號</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>2766-3012</ns1:hasTelephone>
-    <ns1:hasType>寺廟</ns1:hasType>
-    <ns1:longitude>121.5776612</ns1:longitude>
-    <ns1:latitude>25.0500942</ns1:latitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC172428">
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>民生東路4段133號4樓</ns1:hasAddress>
-    <ns1:longitude>121.5547268</ns1:longitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:hasName>精忠區民活動中心</ns1:hasName>
-    <ns1:latitude>25.0584992</ns1:latitude>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC064623">
-    <ns1:longitude>121.5613359</ns1:longitude>
-    <ns1:hasAddress>市民大道5段99號</ns1:hasAddress>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasName>復盛區民活動中心</ns1:hasName>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-    <ns1:latitude>25.0477411</ns1:latitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC425047">
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC355251">
     <ns1:hasType>運動場館</ns1:hasType>
+    <ns1:hasAddress>臺北市信義區松勤路100號</ns1:hasAddress>
+    <ns1:longitude>121.5666793</ns1:longitude>
     <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>臺北市松山區敦化北路3號</ns1:hasAddress>
-    <ns1:hasName>臺北田徑場</ns1:hasName>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>02-25700651#11509</ns1:hasTelephone>
-    <ns1:latitude>25.0497249</ns1:latitude>
-    <ns1:longitude>121.5525223</ns1:longitude>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasName>臺北市信義運動中心</ns1:hasName>
+    <ns1:latitude>25.0318684</ns1:latitude>
+    <ns1:hasTelephone>522</ns1:hasTelephone>
   </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC513549">
-    <ns1:hasTelephone>25850192</ns1:hasTelephone>
-    <ns1:hasName>民權公園</ns1:hasName>
-    <ns1:hasAddress>臺北市松山區民權國小旁</ns1:hasAddress>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC684231">
+    <ns1:hasAddress>信義區福德街221巷12號</ns1:hasAddress>
+    <ns1:hasName>松山奉天宮</ns1:hasName>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasTelephone>150</ns1:hasTelephone>
+    <ns1:latitude>25.0373846</ns1:latitude>
+    <ns1:longitude>121.5846688</ns1:longitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC558248">
+    <ns1:hasAddress>吳興街506巷21號1樓</ns1:hasAddress>
+    <ns1:hasName>惠安區民活動中心</ns1:hasName>
+    <ns1:hasTelephone>20</ns1:hasTelephone>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:latitude>25.022989</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.568487</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC217163">
+    <ns1:hasName>松德公園</ns1:hasName>
     <ns1:hasCategory>Shelter(Outdoor)</ns1:hasCategory>
+    <ns1:hasTelephone>1346</ns1:hasTelephone>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasAddress>臺北市信義區松德路180巷興雅國中西側</ns1:hasAddress>
+    <ns1:longitude>121.5735352</ns1:longitude>
     <ns1:hasType>防災公園</ns1:hasType>
-    <ns1:longitude>121.5589142</ns1:longitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:latitude>25.0591662</ns1:latitude>
+    <ns1:latitude>25.0356485</ns1:latitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC294530">
-    <ns1:latitude>25.052998</ns1:latitude>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC562223">
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
     <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>南京東路5段59巷29弄4號</ns1:hasAddress>
-    <ns1:hasTelephone>2768-1522</ns1:hasTelephone>
-    <ns1:hasName>台北佛教蓮社</ns1:hasName>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasType>寺廟</ns1:hasType>
-    <ns1:longitude>121.559527</ns1:longitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC169237">
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasAddress>南京東路5段291巷44弄23號之1</ns1:hasAddress>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-    <ns1:longitude>121.565586</ns1:longitude>
-    <ns1:hasName>安平區民活動中心</ns1:hasName>
+    <ns1:hasName>黎忠區民活動中心</ns1:hasName>
+    <ns1:hasTelephone>35</ns1:hasTelephone>
+    <ns1:hasAddress>和平東路三段391巷16號2樓</ns1:hasAddress>
+    <ns1:latitude>25.020185</ns1:latitude>
     <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:latitude>25.053451</ns1:latitude>
+    <ns1:longitude>121.558089</ns1:longitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC830284">
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:hasName>三民區民活動中心</ns1:hasName>
-    <ns1:longitude>121.562837</ns1:longitude>
-    <ns1:hasAddress>民生東路5段163之1號8樓</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:latitude>25.059274</ns1:latitude>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC691033">
-    <ns1:longitude>121.566842</ns1:longitude>
-    <ns1:hasName>民權區民活動中心</ns1:hasName>
-    <ns1:latitude>25.06348</ns1:latitude>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>民權東路5段臨43號</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC190071">
-    <ns1:hasName>新聚區民活動中心</ns1:hasName>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:hasAddress>南京東路5段374號</ns1:hasAddress>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:longitude>121.5694386</ns1:longitude>
-    <ns1:latitude>25.0511311</ns1:latitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC791848">
-    <ns1:hasAddress>民權東路三段140巷15號4樓</ns1:hasAddress>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:longitude>121.5471001</ns1:longitude>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:latitude>25.060364</ns1:latitude>
-    <ns1:hasName>民有區民活動中心</ns1:hasName>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC506198">
-    <ns1:hasName>中崙高中</ns1:hasName>
-    <ns1:longitude>121.561191</ns1:longitude>
-    <ns1:latitude>25.0487115</ns1:latitude>
-    <ns1:hasTelephone>27535316ext 400</ns1:hasTelephone>
-    <ns1:hasAddress>松山區八德路4段101號</ns1:hasAddress>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasType>學校</ns1:hasType>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC798353">
-    <ns1:hasAddress>三民路35巷9號</ns1:hasAddress>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:latitude>25.05558</ns1:latitude>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-    <ns1:longitude>121.563625</ns1:longitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasName>自強區民活動中心</ns1:hasName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC688458">
-    <ns1:hasType>寺廟</ns1:hasType>
-    <ns1:hasTelephone>2712-9220</ns1:hasTelephone>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>南京東路4段53巷7弄1號</ns1:hasAddress>
-    <ns1:hasName>財團法人基督教
-台北神的教會</ns1:hasName>
-    <ns1:longitude>121.551025</ns1:longitude>
-    <ns1:latitude>25.052776</ns1:latitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC875573">
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasName>財團法人中華基督教
-浸信會錫安堂</ns1:hasName>
-    <ns1:hasAddress>南京東路5段343號4樓</ns1:hasAddress>
-    <ns1:longitude>121.560446</ns1:longitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasTelephone>2768-8684</ns1:hasTelephone>
-    <ns1:hasType>寺廟</ns1:hasType>
-    <ns1:latitude>25.053239</ns1:latitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC019281">
-    <ns1:hasTelephone>2741-4065#130</ns1:hasTelephone>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasType>學校</ns1:hasType>
-    <ns1:latitude>25.0491037</ns1:latitude>
-    <ns1:longitude>121.5485306</ns1:longitude>
-    <ns1:hasName>敦化國小</ns1:hasName>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>松山區敦化北路2號</ns1:hasAddress>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC854071">
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>27653433轉301</ns1:hasTelephone>
-    <ns1:hasType>學校</ns1:hasType>
-    <ns1:hasAddress>松山區新東街30巷1號</ns1:hasAddress>
-    <ns1:latitude>25.0597793</ns1:latitude>
-    <ns1:hasName>民生國中</ns1:hasName>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:longitude>121.566716</ns1:longitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC809075">
-    <ns1:hasType>學校</ns1:hasType>
-    <ns1:hasTelephone>27124872#935</ns1:hasTelephone>
-    <ns1:longitude>121.5518154</ns1:longitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasName>民族國小</ns1:hasName>
-    <ns1:hasAddress>臺北市松山區民生東路4段97巷7號</ns1:hasAddress>
-    <ns1:latitude>25.0594726</ns1:latitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC507130">
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:latitude>25.0606008</ns1:latitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasAddress>松山區復興北路361巷7號</ns1:hasAddress>
-    <ns1:hasType>學校</ns1:hasType>
-    <ns1:hasName>中山國中</ns1:hasName>
-    <ns1:longitude>121.5455468</ns1:longitude>
-    <ns1:hasTelephone>27126701#512</ns1:hasTelephone>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC804113">
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>南京東路4段75巷32號</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>2713-5447</ns1:hasTelephone>
-    <ns1:hasName>財團法人台北市
-基督教改革宗宏恩堂</ns1:hasName>
-    <ns1:hasType>寺廟</ns1:hasType>
-    <ns1:longitude>121.553539</ns1:longitude>
-    <ns1:latitude>25.053011</ns1:latitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC269084">
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC108405">
     <ns1:hasType>優先安置學校</ns1:hasType>
-    <ns1:hasTelephone>27646080-231</ns1:hasTelephone>
-    <ns1:latitude>25.0632227</ns1:latitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasName>三民國小</ns1:hasName>
-    <ns1:hasAddress>松山區民權東路5段1號</ns1:hasAddress>
-    <ns1:longitude>121.5642866</ns1:longitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC025899">
-    <ns1:hasName>財團法人台北市
-復原耶穌基督教會</ns1:hasName>
-    <ns1:latitude>25.0500556</ns1:latitude>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasType>寺廟</ns1:hasType>
-    <ns1:hasAddress>八德路4段699號8樓之1</ns1:hasAddress>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
     <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:longitude>121.5765576</ns1:longitude>
-    <ns1:hasTelephone>2765-0884</ns1:hasTelephone>
+    <ns1:hasAddress>信義區松勤街60號</ns1:hasAddress>
+    <ns1:latitude>25.0318604</ns1:latitude>
+    <ns1:hasName>信義國小</ns1:hasName>
+    <ns1:longitude>121.5632007</ns1:longitude>
+    <ns1:hasTelephone>150</ns1:hasTelephone>
   </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC315381">
-    <ns1:longitude>121.55694</ns1:longitude>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC717383">
     <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasTelephone>2579-1940</ns1:hasTelephone>
-    <ns1:hasName>法光寺</ns1:hasName>
-    <ns1:hasAddress>光復北路60巷20號</ns1:hasAddress>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasType>寺廟</ns1:hasType>
-    <ns1:latitude>25.049964</ns1:latitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC381175">
-    <ns1:hasTelephone>27674496#501</ns1:hasTelephone>
-    <ns1:hasType>學校</ns1:hasType>
-    <ns1:latitude>25.0564241</ns1:latitude>
-    <ns1:hasAddress>松山區延壽街401號</ns1:hasAddress>
-    <ns1:longitude>121.5564267</ns1:longitude>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasName>介壽國中</ns1:hasName>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC401444">
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:latitude>25.048607</ns1:latitude>
-    <ns1:longitude>121.550231</ns1:longitude>
-    <ns1:hasType>運動場館</ns1:hasType>
-    <ns1:hasName>臺北市松山運動中心</ns1:hasName>
-    <ns1:hasAddress>臺北市松山區敦化北路1號</ns1:hasAddress>
-    <ns1:hasTelephone>25702330#6427 </ns1:hasTelephone>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC609247">
-    <ns1:longitude>121.5520941</ns1:longitude>
-    <ns1:hasName>臺北體育館</ns1:hasName>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:hasTelephone>02-25702330#6512</ns1:hasTelephone>
-    <ns1:hasAddress>臺北市松山區南京東路4段10號</ns1:hasAddress>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasType>運動場館</ns1:hasType>
-    <ns1:latitude>25.051292</ns1:latitude>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC623895">
-    <ns1:latitude>25.0483776</ns1:latitude>
-    <ns1:hasAddress>長安東路2段229號</ns1:hasAddress>
-    <ns1:hasType>活動中心</ns1:hasType>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:longitude>121.5458959</ns1:longitude>
-    <ns1:hasTelephone>87878787#827</ns1:hasTelephone>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasName>中正區民活動中心</ns1:hasName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC593139">
-    <ns1:hasAddress>臺北市松山區民權東路4段200號</ns1:hasAddress>
-    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasTelephone>27652327</ns1:hasTelephone>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:latitude>25.0625096</ns1:latitude>
-    <ns1:hasName>民權國小</ns1:hasName>
-    <ns1:longitude>121.5622982</ns1:longitude>
+    <ns1:hasTelephone>151</ns1:hasTelephone>
+    <ns1:longitude>121.572237</ns1:longitude>
+    <ns1:latitude>25.0364201</ns1:latitude>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasAddress>信義區松德路168巷15號</ns1:hasAddress>
     <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasName>興雅國中</ns1:hasName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC368901">
-    <ns1:hasName>西松高中</ns1:hasName>
-    <ns1:hasDistrict>松山區</ns1:hasDistrict>
-    <ns1:longitude>121.5670822</ns1:longitude>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC069308">
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>六合區民活動中心</ns1:hasName>
+    <ns1:longitude>121.5688737</ns1:longitude>
+    <ns1:hasAddress>松仁路240巷19號3樓</ns1:hasAddress>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:latitude>25.0245225</ns1:latitude>
+    <ns1:hasTelephone>15</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC967922">
+    <ns1:hasTelephone>100</ns1:hasTelephone>
+    <ns1:hasCategory>Rescue</ns1:hasCategory>
+    <ns1:longitude>121.579726</ns1:longitude>
+    <ns1:hasAddress>臺北市信義區松山路653號</ns1:hasAddress>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasType>國軍營區</ns1:hasType>
+    <ns1:hasName>永春坡營區</ns1:hasName>
+    <ns1:latitude>25.034058</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC298700">
+    <ns1:hasAddress>信義區松隆路161號</ns1:hasAddress>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.0482363</ns1:latitude>
+    <ns1:hasTelephone>97</ns1:hasTelephone>
+    <ns1:hasName>永吉國中</ns1:hasName>
+    <ns1:longitude>121.5741453</ns1:longitude>
+    <ns1:hasType>學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC398314">
+    <ns1:hasAddress>信義區松山路287巷5號</ns1:hasAddress>
+    <ns1:hasName>永吉國小</ns1:hasName>
+    <ns1:latitude>25.0430088</ns1:latitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasTelephone>53</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:longitude>121.5798853</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC669832">
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasTelephone>60</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:longitude>121.5687156</ns1:longitude>
+    <ns1:latitude>25.0257427</ns1:latitude>
+    <ns1:hasName>吳興國小</ns1:hasName>
+    <ns1:hasAddress>臺北市信義區松仁路226號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC444269">
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>信義區松仁路95巷20號</ns1:hasAddress>
+    <ns1:hasTelephone>80</ns1:hasTelephone>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:longitude>121.5709034</ns1:longitude>
+    <ns1:latitude>25.0363748</ns1:latitude>
+    <ns1:hasName>博愛國小</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC777725">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>松山高中</ns1:hasName>
+    <ns1:hasTelephone>300</ns1:hasTelephone>
+    <ns1:longitude>121.5655884</ns1:longitude>
+    <ns1:hasAddress>信義區基隆路1段156號</ns1:hasAddress>
+    <ns1:latitude>25.0436455</ns1:latitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC930055">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:longitude>121.570082</ns1:longitude>
+    <ns1:hasTelephone>20</ns1:hasTelephone>
+    <ns1:hasName>泰和里辦公處</ns1:hasName>
+    <ns1:latitude>25.021303</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasAddress>臺北市信義區吳興街583巷80號1樓</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC890934">
+    <ns1:latitude>25.0365198</ns1:latitude>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:longitude>121.5874838</ns1:longitude>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>200</ns1:hasTelephone>
+    <ns1:hasName>松山慈惠堂</ns1:hasName>
+    <ns1:hasAddress>信義區福德街251巷33號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC894564">
+    <ns1:hasTelephone>300</ns1:hasTelephone>
+    <ns1:hasName>永春高中</ns1:hasName>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasAddress>信義區松山路654號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:latitude>25.0328193</ns1:latitude>
+    <ns1:longitude>121.5785688</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC545695">
+    <ns1:longitude>121.566612</ns1:longitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasAddress>莊敬路423巷7弄2號1樓</ns1:hasAddress>
+    <ns1:latitude>25.0286879</ns1:latitude>
+    <ns1:hasTelephone>20</ns1:hasTelephone>
+    <ns1:hasName>三張區民活動中心</ns1:hasName>
+    <ns1:hasType>活動中心</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC612946">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.029062</ns1:latitude>
+    <ns1:hasName>景勤區民活動中心</ns1:hasName>
+    <ns1:hasTelephone>15</ns1:hasTelephone>
+    <ns1:longitude>121.561168</ns1:longitude>
+    <ns1:hasAddress>吳興街156巷6號6樓</ns1:hasAddress>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasType>活動中心</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC296709">
+    <ns1:hasTelephone>198</ns1:hasTelephone>
+    <ns1:longitude>121.5700539</ns1:longitude>
+    <ns1:hasAddress>信義區基隆路1段83巷9號</ns1:hasAddress>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasName>興雅國小</ns1:hasName>
+    <ns1:latitude>25.04676</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC793832">
+    <ns1:latitude>25.0371489</ns1:latitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>正和區民活動中心</ns1:hasName>
+    <ns1:hasAddress>仁愛路四段452巷3號</ns1:hasAddress>
+    <ns1:longitude>121.5592375</ns1:longitude>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasTelephone>15</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC632915">
+    <ns1:longitude>121.5775774</ns1:longitude>
+    <ns1:hasName>永春區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasAddress>松山路294號4樓</ns1:hasAddress>
+    <ns1:hasTelephone>20</ns1:hasTelephone>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:latitude>25.0430691</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC765568">
+    <ns1:latitude>25.0349631</ns1:latitude>
+    <ns1:longitude>121.5801123</ns1:longitude>
+    <ns1:hasTelephone>116</ns1:hasTelephone>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>信義區松山路655號</ns1:hasAddress>
+    <ns1:hasName>松山家商</ns1:hasName>
+    <ns1:hasType>學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC883340">
+    <ns1:hasAddress>臺北市信義區光復南路271號</ns1:hasAddress>
+    <ns1:hasTelephone>40</ns1:hasTelephone>
+    <ns1:latitude>25.0402629</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>光復國小</ns1:hasName>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:longitude>121.5578797</ns1:longitude>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC191358">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>臺北市信義區忠孝東路5段236巷15號</ns1:hasAddress>
+    <ns1:hasName>松山工農</ns1:hasName>
+    <ns1:latitude>25.0396454</ns1:latitude>
+    <ns1:hasTelephone>50</ns1:hasTelephone>
+    <ns1:longitude>121.5720304</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC698684">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.558267</ns1:longitude>
+    <ns1:hasAddress>信義區基隆路2段99號</ns1:hasAddress>
+    <ns1:hasName>三興國小</ns1:hasName>
+    <ns1:hasTelephone>77</ns1:hasTelephone>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:latitude>25.029467</ns1:latitude>
+    <ns1:hasType>學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC960999">
+    <ns1:hasName>福德國小</ns1:hasName>
+    <ns1:hasAddress>信義區福德街253號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5865111</ns1:longitude>
+    <ns1:hasTelephone>105</ns1:hasTelephone>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:latitude>25.0388696</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC999317">
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:latitude>25.0433609</ns1:latitude>
+    <ns1:hasName>興雅區民活動中心</ns1:hasName>
+    <ns1:hasTelephone>25</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>松隆路36號3樓</ns1:hasAddress>
+    <ns1:longitude>121.567473</ns1:longitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC539286">
+    <ns1:latitude>25.0286441</ns1:latitude>
+    <ns1:hasAddress>信義區松仁路158巷1號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasName>信義國中</ns1:hasName>
+    <ns1:longitude>121.5675767</ns1:longitude>
+    <ns1:hasTelephone>361</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC255413">
+    <ns1:hasAddress>信義區松山路225巷48號</ns1:hasAddress>
+    <ns1:hasName>永春國小</ns1:hasName>
+    <ns1:hasTelephone>115</ns1:hasTelephone>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:longitude>121.5790792</ns1:longitude>
+    <ns1:latitude>25.0446527</ns1:latitude>
     <ns1:hasType>學校</ns1:hasType>
     <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
-    <ns1:hasAddress>松山區健康路325巷7號</ns1:hasAddress>
-    <ns1:latitude>25.0555511</ns1:latitude>
-    <ns1:hasTelephone>25286618#111</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC430209">
+    <ns1:hasName>瑠公國中</ns1:hasName>
+    <ns1:hasDistrict>信義區</ns1:hasDistrict>
+    <ns1:hasTelephone>30</ns1:hasTelephone>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>臺北市信義區福德街221巷15號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5853391</ns1:longitude>
+    <ns1:latitude>25.0370881</ns1:latitude>
   </rdf:Description>
 </rdf:RDF>

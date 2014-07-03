@@ -71,11 +71,13 @@ def web_local_app():
 
 @app.route('/cache/<filename>')
 def uploaded_file(filename):
+    print >> sys.stderr, os.path.join(app.config['UPLOAD_FOLDER'],filename)
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
+    print >> sys.stderr, 'hbgbtg'
     f = request.files['file']
     if f and allowed_file(f.filename):
         extension = f.filename.rsplit('.', 1)[1]
