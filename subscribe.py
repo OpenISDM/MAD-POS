@@ -68,8 +68,15 @@ def set_up_ngrok(domain):
     Just tell ngrok which port your web server is running on. 
     Let's try opening port 80 to the internet.
     '''
-    subprocess.Popen(["nohup","./ngrok","-log=stdout","-authtoken", \
-    "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)])
+    import platform
+    if platform.system() == 'Windows':
+        startupinfo = subprocess.STARTUPINFO()
+        startupinfo.dwFlags = subprocess.STARTF_USESTDHANDLES | subprocess.STARTF_USESHOWWINDOW
+        pid = subprocess.Popen([r"ngrok\ngrok.exe","-log=stdout","-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)], startupinfo=startupinfo).pid
+    elif platform.system() == 'Linux':
+        pid = subprocess.Popen(\
+            ["nohup","./ngrok/ngrok","-log=stdout","-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)]).pid
+    logger.info('Run in background process : ' + str(pid))
 
 def get_opt(argv):
     '''
