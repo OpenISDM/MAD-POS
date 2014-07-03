@@ -36,6 +36,7 @@
 
         2014/6/3: complete version 1.0
         2014/6/10: complete version 1.1
+        2014/7/3: complete version 1.2
 
 
 """
@@ -62,33 +63,36 @@ console.setFormatter(formatter)
 logger.addHandler(console)
 logger.setLevel(logging.INFO)
 
+
 def set_up_ngrok(domain):
     '''
-    ngrok lets you expose a locally running web service to the internet. 
-    Just tell ngrok which port your web server is running on. 
+    ngrok lets you expose a locally running web service to the internet.
+    Just tell ngrok which port your web server is running on.
     Let's try opening port 80 to the internet.
     '''
     import platform
     if platform.system() == 'Windows':
         startupinfo = subprocess.STARTUPINFO()
         startupinfo.dwFlags = subprocess.STARTF_USESTDHANDLES | subprocess.STARTF_USESHOWWINDOW
-        pid = subprocess.Popen([r"ngrok\ngrok.exe","-log=stdout","-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)], startupinfo=startupinfo).pid
+        pid = subprocess.Popen(
+            [r"ngrok\ngrok.exe", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)], startupinfo=startupinfo).pid
     elif platform.system() == 'Linux':
-        pid = subprocess.Popen(\
-            ["nohup","./ngrok/ngrok","-log=stdout","-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)]).pid
+        pid = subprocess.Popen(
+            ["nohup", "./ngrok/ngrok", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)]).pid
     logger.info('Run in background process : ' + str(pid))
+
 
 def get_opt(argv):
     '''
     Create a command program to get arg and opt.
-    
+
      @param {String} [pos_id] POS ID for Interface Server
      @param {String} [pos_type] POS type for Interface Server
      @param {String} [is_url] Interface URL for HTTP requests
      @param {String} [subdomain] Callback domain for POS to set up callback URL
     '''
     pos_id = ''
-    pos_type = 'fix'  
+    pos_type = 'fix'
     is_url = 'http://140.109.17.57/hub/'
 
     try:
@@ -106,7 +110,7 @@ def get_opt(argv):
                 print 'subscribe.py  -P <pos_id> -U <is_url> -Y <pos_type>'
                 sys.exit()
             elif opt in ("-P", "--posid"):
-               pos_id = arg
+                pos_id = arg
             elif opt in ("-U", "--isurl"):
                 is_url = arg
             elif opt in ("-Y", "--postype"):
@@ -136,7 +140,7 @@ def subscribe(pos_id, is_url, pos_type):
         'Content-Type': 'text/plain; charset=utf-8',
         'Accept-Language': 'en-US,en;q=0.8'}
     r = requests.get(is_url, params=payload)
-    
+
     logger.info('Hub URL : ' + r.links['hub']['url'])
     logger.info('Topic URL : ' + r.links['self']['url'])
 
@@ -149,16 +153,16 @@ def subscribe(pos_id, is_url, pos_type):
     r = requests.get('http://127.0.0.1/settopicurl', params=payload)
     logger.info('Results : ' + r.text)
 
-
     # Starting subscriber
     headers = {'content-type': 'application/x-www-form-urlencoded'}
     payload = {
         'hub.mode': 'subscribe',
         'hub.topic': topic_url,
-        'hub.callback': 'http://' + pos_id +'.ngrok.com/callback'}
+        'hub.callback': 'http://' + pos_id + '.ngrok.com/callback'}
 
     r = requests.post(hub_url, data=payload, headers=headers)
-    logger.info('Interface Server Response Status Code : ' + str(r.status_code))
+    logger.info(
+        'Interface Server Response Status Code : ' + str(r.status_code))
     logger.info('Interface Server Response Results : ' + r.content)
 
 if __name__ == "__main__":
