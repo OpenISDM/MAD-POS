@@ -75,10 +75,10 @@ def set_up_ngrok(domain):
         startupinfo = subprocess.STARTUPINFO()
         startupinfo.dwFlags = subprocess.STARTF_USESTDHANDLES | subprocess.STARTF_USESHOWWINDOW
         pid = subprocess.Popen(
-            [r"ngrok\ngrok.exe", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)], startupinfo=startupinfo).pid
+            [r"sshtunnel\ngrok.exe", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)], startupinfo=startupinfo).pid
     elif platform.system() == 'Linux':
         pid = subprocess.Popen(
-            ["nohup", "./ngrok/ngrok", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)]).pid
+            ["nohup", "./sshtunnel/ngrok", "-log=stdout", "-authtoken", "W_0D4KY5as11SvSupBMT", "-subdomain=" + domain, str(80)]).pid
     logger.info('Run in background process : ' + str(pid))
 
 
