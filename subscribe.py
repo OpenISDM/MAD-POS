@@ -93,7 +93,7 @@ def get_opt(argv):
     '''
     pos_id = ''
     pos_type = 'fix'
-    is_url = 'http://140.109.17.57/hub/'
+    is_url = 'http://140.109.22.197/hub/'
 
     try:
         opts, args = getopt.getopt(
