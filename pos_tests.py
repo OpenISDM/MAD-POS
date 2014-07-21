@@ -1,3 +1,40 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+""""
+    Copyright (c) 2014  OpenISDM
+
+    Project Name: 
+
+        OpenISDM MAD
+
+    Version:
+
+        1.0
+
+    File Name:
+
+        pos_tests.py
+
+    Abstract:
+
+        sub.py is a module of tests the POS application.
+    
+    Authors:  
+
+        Johnson Su, johnsonsu@iis.sinica.edu.tw
+
+    License:
+
+        GPL 3.0 This file is subject to the terms and conditions defined 
+        in file 'COPYING.txt', which is part of this source code package.
+
+    Major Revision History:
+
+        2014/7/21: complete version 1.0
+
+
+
+"""
 import os
 import pos
 import unittest

@@ -13,11 +13,11 @@
 
     File Name:
 
-        sub.py
+        pos.py
 
     Abstract:
 
-        sub.py is a module of Interface Server (IS) of 
+        pos.py is a module of Interface Server (IS) of 
         Mobile Assistance for Disasters (MAD) in the OpenISDM 
         Virtual Repository project.
         It handling the requests from Interface Server.
@@ -51,7 +51,7 @@ app = Flask(__name__)
 
 topic_url = ''
 
-app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(__file__), 'Cache')
+app.config['Cache_Folder'] = os.path.join(os.path.dirname(__file__), 'Cache')
 
 
 # These are the extension that we are accepting to be uploaded
@@ -72,7 +72,7 @@ def web_local_app():
 @app.route('/cache/<extension>')
 def uploaded_file(extension):
     filename = 'Cache.' + extension
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+    return send_from_directory(app.config['Cache_Folder'], filename)
 
 
 @app.route('/callback', methods=['POST'])
@@ -80,7 +80,9 @@ def callbackPost():
     f = request.files['file']
     if f and allowed_file(f.filename):
         extension = f.filename.rsplit('.', 1)[1]
-        save_path = app.config['UPLOAD_FOLDER'] + extension
+        filename = 'Cache.' + extension
+        save_path = os.path.join(app.config['Cache_Folder'] , filename)
+        print save_path
         f.save(save_path)
         return 'PUSH Success'
     return 'PUSH file is not correct'
