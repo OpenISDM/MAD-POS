@@ -51,7 +51,7 @@ app = Flask(__name__)
 
 topic_url = ''
 
-app.config['UPLOAD_FOLDER'] = os.path.abspath('./mad_pos/Cache')
+app.config['UPLOAD_FOLDER'] = "/Cache"
 
 
 # These are the extension that we are accepting to be uploaded
@@ -71,8 +71,8 @@ def web_local_app():
 
 @app.route('/cache/<filename>')
 def uploaded_file(filename):
-    print >> sys.stderr, os.path.join(app.config['UPLOAD_FOLDER'],filename)
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+    uploadFolder = os.path.dirname(__file__) + app.config['UPLOAD_FOLDER']
+    return send_from_directory(uploadFolder, filename)
 
 
 @app.route('/callback', methods=['POST'])
