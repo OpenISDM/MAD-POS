@@ -51,7 +51,7 @@ app = Flask(__name__)
 
 topic_url = ''
 
-app.config['UPLOAD_FOLDER'] = "/Cache"
+app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(__file__), 'Cache')
 
 
 # These are the extension that we are accepting to be uploaded
@@ -69,23 +69,20 @@ def web_local_app():
     return render_template('index.html')
 
 
-@app.route('/cache/<filename>')
-def uploaded_file(filename):
-    uploadFolder = os.path.dirname(__file__) + app.config['UPLOAD_FOLDER']
-    return send_from_directory(uploadFolder, filename)
+@app.route('/cache/<extension>')
+def uploaded_file(extension):
+    filename = 'Cache.' + extension
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
 @app.route('/callback', methods=['POST'])
 def callbackPost():
-    print >> sys.stderr, 'hbgbtg'
     f = request.files['file']
     if f and allowed_file(f.filename):
         extension = f.filename.rsplit('.', 1)[1]
-        save_path = os.path.join(
-            app.config['UPLOAD_FOLDER'], 'Cache.' + extension)
-        print >> sys.stderr, save_path
+        save_path = app.config['UPLOAD_FOLDER'] + extension
         f.save(save_path)
-        return 'PUSH　Success'
+        return 'PUSH Success'
     return 'PUSH file is not correct'
 
 
@@ -93,29 +90,23 @@ def callbackPost():
 def settopicurl():
     global topic_url
     topic_url = request.args.get('url')
-    print >> sys.stderr, '/settopicurl/topic_url'
-    print >> sys.stderr, topic_url
-    # resp_content = 'Store Topic URL　Success! %s' % topic_url
-    return 'Store Topic URL　Success!'
+    if topic_url != None:
+        return 'Store Topic URL Success!'
+    else:
+        return 'Store Topic URL Failed!'
 
 
 @app.route('/callback', methods=['GET'])
 def callbackGet():
     query_string = request.args
-    print >> sys.stderr, query_string
     if query_string.get('hub.mode') == 'denied':
         resp = make_response(render_template('Accepted.html'), 202)
         return resp
     elif query_string.get('hub.mode') == 'subscribe' or query_string.get('hub.mode') == 'unsubscribe':
-        print >> sys.stderr, 'topic_url'
-        print >> sys.stderr, topic_url
-        print >> sys.stderr, query_string.get('hub.topic')
         if topic_url == query_string.get('hub.topic'):
             if 'hub.challenge' in query_string:
-                print >> sys.stderr, query_string.get('hub.challenge')
                 return query_string.get('hub.challenge')
             else:
-                print >> sys.stderr, 'No value of hub.challenge, topic url is right'
                 return 'No value of hub.challenge, topic url is right'
         else:
             resp = make_response(render_template('Unknown.html'), 406)
