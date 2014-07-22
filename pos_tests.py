@@ -59,15 +59,15 @@ class POSTestCase(unittest.TestCase):
         Step 1!!!!
         Testing uploaded route '/callback' using HTTP POST
         """
-        with open('./testing/pos.pyc', 'rb') as f:
+        with open('./test_files/pos.pyc', 'rb') as f:
             rv = self.app.post('/callback', data=dict(file=f))
         assert 'PUSH file is not correct' in rv.data
 
-        with open('./testing/testing.rdf', 'rb') as f:
+        with open('./test_files/testing.rdf', 'rb') as f:
             rv = self.app.post('/callback', data=dict(file=f))
         assert 'PUSH Success' in rv.data
 
-        with open('./testing/testing.png', 'rb') as f:
+        with open('./test_files/testing.png', 'rb') as f:
             rv = self.app.post('/callback', data=dict(file=f))
         assert 'PUSH Success' in rv.data
 
